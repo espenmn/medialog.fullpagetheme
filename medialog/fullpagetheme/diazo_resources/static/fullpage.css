@@ -2,7 +2,31 @@
 
 div.fp-tableCell {
 	text-align: center;
-	font-size: 160%;
+	font-size: 130%;
 	padding-top: 30%;
+	
 
 }
+
+.item {
+      background-position: left center !important;
+      background-size: cover;
+      }
+
+#navbar-collapse-1 { font-size: medium;}
+        .item.table { margin: 0;}
+        .controlArrow { opacity: 0.5;}
+        .controlArrow:hover { opacity: 1;}
+        
+
+@media (max-width: 768px) {
+            .container { margin:0 10px;}
+            h1{ font-size: 26px !important;	}
+ 
+        }
+        
+@media  (min-width: 769px)  {
+            h1{ font-size: 34px !important;	}
+ 
+        }
+ 
