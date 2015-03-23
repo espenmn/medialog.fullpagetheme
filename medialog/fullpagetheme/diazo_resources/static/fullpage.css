@@ -1,0 +1,8 @@
+/* Stylesheet for the 'ICustomTheme' Plone browser layer */
+
+div.fp-tableCell {
+	text-align: center;
+	font-size: 160%;
+	padding-top: 30%;
+
+}

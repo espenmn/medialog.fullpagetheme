@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>fullPage.js A simple Demo</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage very simple demo." />
+	<meta name="keywords"  content="fullpage,jquery,demo,simple" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="alvarotrigo.com/fullPage/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="++theme++medialog.fullpagetheme/static/fullpage.css" />
+	
+
+</head>
+<body>
+  <div id="content-core" />
+ 
+
+</body>
+
+	<script src="++resource++plone.app.jquery.js"></script>
+	<script src="collective.js.jqueryui.custom.min.js"></script>
+
+	 
+	<script type="text/javascript" src="++theme++medialog.fullpagetheme/static/jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#content-core').fullpage({
+			    sectionSelector: '.item',
+				sectionsColor: ['#c9e4f9', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+			});
+		});
+		
+	</script>
+
+
+</html>
