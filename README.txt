@@ -1,6 +1,8 @@
 Introduction
 ============
 
+A diazo theme, making 
+"Full folder view" like
+http://alvarotrigo.com/fullPage/
 
-
-This product may contain traces of nuts.
+(under development)
