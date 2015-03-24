@@ -1,0 +1,16 @@
+
+develop-eggs
+develop-eggs/*
+eggs
+eggs/*
+
+bin/*
+bin
+
+*.pyc
+
+*.cfg
+
+medialog.fullpagetheme.egg-info
+medialog.fullpagetheme.egg-info/*
+*.cfg
