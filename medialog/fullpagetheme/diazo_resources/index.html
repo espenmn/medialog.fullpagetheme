@@ -10,11 +10,10 @@
 <body>
   <-- ul id="portal-globalnav" /-->
   <ul id="menu">
-	<li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
-	<li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
-	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third section</a></li>
-	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth section</a></li>
-</ul>xxxxx
+	<li data-menuanchor="asdfasdfasdf" class="active">SSSSS</li>
+	<li data-menuanchor="events">Events</li>
+
+	</ul>
   <div id="content-core" />
 </body>
 
@@ -26,14 +25,15 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#content-core').fullpage({
-			    sectionSelector: '.item',
+			    sectionSelector: '.section',
 				sectionsColor: ['#c9e4f9', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
 				controlArrows: true,
         		verticalCentered: true,
         		resize : false,
+        		menu: true,
         		paddingTop: '0em',
         		paddingBottom: '10px',
-        		//fixedElements: '#portal-globalnav',
+        		//fixedElements: '#menu',
         		//responsive: 0,
 			});
 		});		

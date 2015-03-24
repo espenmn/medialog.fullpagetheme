@@ -5,7 +5,7 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <!-- Apply the following rules to standard Plone pages -->
-    <rules css:if-content=".template-folder_full_view">
+    <rules css:if-content=".template-all_content">
 
         <theme href="index.html" />
 
