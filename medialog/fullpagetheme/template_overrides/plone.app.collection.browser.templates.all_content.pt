@@ -19,7 +19,7 @@
     				<a href="" 
     					tal:define="link python:'#' + dokument"
     					tal:attributes="href link"  
-    					tal:content="dokument" />
+    					tal:content="item/Title" />
     			</li>	
     		</tal:loop>
    		</ul>

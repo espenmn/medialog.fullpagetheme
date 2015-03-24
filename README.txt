@@ -6,3 +6,5 @@ A diazo theme, making
 http://alvarotrigo.com/fullPage/
 
 (under development)
+
+Currently: it only works for collections

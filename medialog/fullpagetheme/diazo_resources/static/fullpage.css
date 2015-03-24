@@ -1,9 +1,13 @@
+/* @override http://localhost:8080/Plone/++theme++medialog.fullpagetheme/++theme++medialog.fullpagetheme/static/fullpage.css */
+
 /* Stylesheet for the 'ICustomTheme' Plone browser layer */
 
 div.fp-tableCell {
 	text-align: center;
 	font-size: 130%;
 	padding-top: 25%;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 #menu {
@@ -11,24 +15,29 @@ div.fp-tableCell {
 	top: 0;
 	z-index:100;
 	text-align: center;
+	width: 100%;
+	margin-top: 20px
 }
+
+#menu li {
+	padding: 9px 15px;
+	border-radius: 5px;
+	background: white;
+	opacity: 0.8;
+	margin: 5px 7px;
+}
+
+#menu li.active  {
+	opacity:1;
+	background: #fdd51d;
+}
+
 #portal-globalnav {
 	position: fixed;
 	z-index: 9;
 	padding-bottom: 0;
 	display: none;
 }
-
-.item {
-      background-position: left center !important;
-      background-size: cover;
-      }
-
-#navbar-collapse-1 { font-size: medium;}
-        .item.table { margin: 0;}
-        .controlArrow { opacity: 0.5;}
-        .controlArrow:hover { opacity: 1;}
-        
 
 @media (max-width: 768px) {
             .container { margin:0 10px;}
