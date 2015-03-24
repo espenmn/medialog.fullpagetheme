@@ -12,10 +12,9 @@
 <metal:block use-macro="context/standard_view/macros/content-core">
 
     <metal:entries fill-slot="entries">
-
     <metal:block use-macro="context/standard_view/macros/entries">
     <metal:entry fill-slot="entry"> 
-		<div class="section" tal:attributes="data-anchor item/id">
+		<div class="section" tal:attributes="data-anchor item/id; anchor item/id">
         	<div tal:define="realobject python:item.getObject()"
              	tal:replace="structure realobject/folder_full_view_item" />
 		</div>

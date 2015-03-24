@@ -10,10 +10,10 @@
 <body>
   <-- ul id="portal-globalnav" /-->
   <ul id="menu">
-	<li data-menuanchor="asdfasdfasdf" class="active">SSSSS</li>
-	<li data-menuanchor="events">Events</li>
-
-	</ul>
+	<li data-menuanchor="news" class="active"><a href="#news">News</a></li>
+	<li data-menuanchor="events"><a href="#events">Events</a></li>
+   </ul>
+	
   <div id="content-core" />
 </body>
 
@@ -27,12 +27,7 @@
 			$('#content-core').fullpage({
 			    sectionSelector: '.section',
 				sectionsColor: ['#c9e4f9', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-				controlArrows: true,
-        		verticalCentered: true,
-        		resize : false,
-        		menu: true,
-        		paddingTop: '0em',
-        		paddingBottom: '10px',
+				menu: "#menu",
         		//fixedElements: '#menu',
         		//responsive: 0,
 			});

@@ -6,9 +6,13 @@ div.fp-tableCell {
 	padding-top: 25%;
 }
 
-
-#portal-globalnav {
+#menu {
 	position: relative;
+	z-index:100;
+	text-align: center;
+}
+#portal-globalnav {
+	position: fixed;
 	z-index: 9;
 	padding-bottom: 0;
 	display: none;
