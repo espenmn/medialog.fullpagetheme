@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1'
+version = '0.1.1'
 
 setup(name='medialog.fullpagetheme',
       version=version,
@@ -18,7 +18,7 @@ setup(name='medialog.fullpagetheme',
       keywords='',
       author='Espen Moe-Nilssen',
       author_email='espen@medialog.no',
-      url='http://svn.plone.org/svn/collective/',
+      url='https://github.com/espenmn/medialog.fullpagetheme',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['medialog'],

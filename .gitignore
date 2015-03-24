@@ -14,3 +14,13 @@ bin
 medialog.fullpagetheme.egg-info
 medialog.fullpagetheme.egg-info/*
 *.cfg
+
+medialog.fullpagetheme.egg-info/PKG-INFO
+
+medialog.fullpagetheme.egg-info/PKG-INFO
+
+*.cfg
+
+*.zip
+
+medialog.fullpagetheme.egg-info/SOURCES.txt
