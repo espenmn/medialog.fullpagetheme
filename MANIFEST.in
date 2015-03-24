@@ -1,4 +1,5 @@
 recursive-include medialog *
+recursive-include docs *
 include *.txt
 global-exclude *pyc
 

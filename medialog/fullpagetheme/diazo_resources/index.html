@@ -8,10 +8,18 @@
 </head>
 
 <body>
+  <-- ul id="portal-globalnav" /-->
+  <ul id="menu">
+	<li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third section</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth section</a></li>
+</ul>xxxxx
   <div id="content-core" />
 </body>
 
-	<script src="++resource++plone.app.jquery.js"></script>
+    <!-uncomment these for old jqueryui & jquery -->
+	<!--script src="++resource++plone.app.jquery.js"></script-->
 	<!-- script src="collective.js.jqueryui.custom.min.js"></script-->
 	<script type="text/javascript" src="++theme++medialog.fullpagetheme/static/jquery.fullPage.js">
 	</script>
@@ -19,7 +27,14 @@
 		$(document).ready(function() {
 			$('#content-core').fullpage({
 			    sectionSelector: '.item',
-				sectionsColor: ['#c9e4f9', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+				sectionsColor: ['#c9e4f9', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+				controlArrows: true,
+        		verticalCentered: true,
+        		resize : false,
+        		paddingTop: '0em',
+        		paddingBottom: '10px',
+        		//fixedElements: '#portal-globalnav',
+        		//responsive: 0,
 			});
 		});		
 	</script>

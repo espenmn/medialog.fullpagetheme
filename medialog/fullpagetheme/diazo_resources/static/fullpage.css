@@ -3,9 +3,16 @@
 div.fp-tableCell {
 	text-align: center;
 	font-size: 130%;
-	padding-top: 30%;
+	padding-top: 25%;
 	
 
+}
+
+#portal-globalnav {
+	position: relative;
+	z-index: 9;
+	padding-bottom: 0;
+	display: none;
 }
 
 .item {
