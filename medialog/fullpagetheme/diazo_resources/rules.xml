@@ -2,41 +2,84 @@
 <rules
     xmlns="http://namespaces.plone.org/diazo"
     xmlns:css="http://namespaces.plone.org/diazo/css"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:xi="http://www.w3.org/2001/XInclude">
 
-    <!-- Apply the following rules to standard Plone pages -->
+
+
+      <!-- AJAX: Folder listings -->
+	  <rules css:if-content="body > #folderlisting-main-table">
+		<xi:include href="/++theme++bootstrap-framework/rules/edit.xml"/>
+		<xi:include href="/++theme++bootstrap-framework/rules/forms.xml"/>
+	  </rules>
+	  <!-- AJAX: Search page results -->
+		<rules css:if-content="body > #updated-search-results-number">
+		<xi:include href="/++theme++bootstrap-framework/rules/general.xml"/>
+	  </rules>
+
+	  <!-- The condition makes sure that theme is only applied when served in the 
+		   plone main_template. This is necessary for functional edit popups in 
+		   Tiny, for example. -->
+		   
+		   
+		   
+		   
+	  <rules css:if-content="#visual-portal-wrapper">
+	   <rules css:if-not-content=".template-all_content">
+
+		  <theme href="++theme++medialog.childtheme/index.html" />
+		  <drop css:theme-children="body"/>
+		  <before css:theme-children="body" css:content-children="body"/>
+		</rules>
+
+		<!-- Head rules
+			 ================================================================== -->
+		<xi:include href="/++theme++bootstrap-framework/rules/head-base.xml"/>
+		<xi:include href="/++theme++bootstrap-framework/rules/head-theme.xml"/>
+
+		<!-- Body rules
+			 ================================================================== -->
+		<!-- xi:include href="/++theme++bootstrap-framework/rules/header-inverse.xml"/ -->
+		<xi:include href="/++theme++bootstrap-framework/rules/header.xml"/>
+   
+		<xi:include href="/++theme++bootstrap-framework/rules/grid.xml"/>
+		<xi:include href="/++theme++bootstrap-framework/rules/columns.xml"/>
+		<xi:include href="/++theme++bootstrap-framework/rules/lead.xml"/>
+		<xi:include href="/++theme++bootstrap-framework/rules/content.xml"/>
+		<xi:include href="/++theme++bootstrap-framework/rules/forms.xml"/>
+		<xi:include href="/++theme++bootstrap-framework/rules/portlets.xml"/>
+		<xi:include href="/++theme++bootstrap-framework/rules/edit.xml"/>
+		<xi:include href="/++theme++bootstrap-framework/rules/footer-narrow.xml"/>
+		<xi:include href="/++theme++bootstrap-framework/rules/general.xml"/>
+
+		<!-- Place the content 
+			 .................................................................. -->
+
+		<after css:theme-children="body">
+			<!-- version 2 -->
+			<script src="/++theme++bootstrap-framework/js/bootstrap.min.js"></script>
+		
+			<!-- Latest compiled and minified JavaScript -->
+			<!-- script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script-->
+		</after>
+
+
+	  </rules>
+	
+    
+        <!-- Apply the following rules to all-content view -->
     <rules css:if-content=".template-all_content">
 
         <theme href="index.html" />
 
-        <!-- Replace title with Plone's page title  -->
-        <replace css:theme="html head title" css:content="html head title" />
-
-        <!-- Drop the favicon spec coming from content; we'll use the one in the theme. -->
-        <drop content="/html/head/link[@rel='shortcut icon']" />
-
-        <!-- Copy base tag from Plone -->
-        <before css:theme-children="html head" css:content="html head base" />
-
-        <!-- Copy link, style, meta tags from Plone head -->
-        <after css:theme-children="html head"
-               content="/html/head/link | /html/head/style | /html/head/meta" />
-
-        <!-- merge classes from Plone body with theme body -->
-        <merge attributes="class" css:theme="body" css:content="body" />
-
-        <!-- Copy script tags from Plone head to end of body -->
-        <after css:theme-children="html body" css:content="html head script" />
-        
-        <!-- Move inline scripts in content to end of body -->
-        <drop css:content="body script" />
-        <after css:theme-children="html body" css:content="html body script" method="raw" />
-
-        <!-- replace css:content="#portal-globalnav" css:theme="#portal-globalnav" /-->
         <replace css:content="#content-core" css:theme="#content-core" />
         <replace css:content="#portal-globalnav" css:theme="#portal-globalnav" />
 
 
     </rules>
+    
+
+
 
 </rules>
