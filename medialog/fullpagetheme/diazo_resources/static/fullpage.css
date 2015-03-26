@@ -1,3 +1,4 @@
+/* @override http://localhost:8080/FullPlone/++theme++medialog.fullpagetheme/++theme++medialog.fullpagetheme/static/fullpage.css */
 
 /* Stylesheet for the 'ICustomTheme' Plone browser layer */
 
@@ -7,6 +8,7 @@ div.fp-tableCell {
 	padding-top: 25%;
 	padding-left: 30px;
 	padding-right: 30px;
+	overflow: scroll;
 }
 
 #mainnav {
@@ -48,7 +50,18 @@ body #portal-globalnav {
 	position: fixed;
 	z-index: 9;
 	padding-bottom: 0;
-	display: none;
+}
+
+
+
+.fp-tableCell .visualIEFloatFix {
+	background: white;
+	opacity: 0.8;
+	max-width: 30%;
+	margin: auto;
+	padding: 1em;
+	min-height: 15%;
+	border-radius: 0.5em;
 }
 
 @media (max-width: 768px) {
@@ -65,4 +78,8 @@ body #portal-globalnav {
  
  .section {
 	background-size: cover;
+}
+
+ {
+	
 }

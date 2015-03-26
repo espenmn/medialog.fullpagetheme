@@ -29,11 +29,11 @@
 
     <metal:entry fill-slot="entry"> 
 		<div class="section" 
-		      tal:define="url item/getPhysicalPath"
+			 tal:define="realobject python:item.getObject();
+			 url realobject/absolute_url;
+			 logo python:'background-image:url(' + str(url) + '/@@images/image)'"
 			 tal:attributes="data-anchor item/id; 
-			 anchor item/id;
-			 url item/getPhysicalPath;
-			 style python:'background-image:url(/' + item.id + '/image)'">
+			 style logo">
  
         	<div tal:define="realobject python:item.getObject()"
              	tal:replace="structure realobject/folder_full_view_item" />
