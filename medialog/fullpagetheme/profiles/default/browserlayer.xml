@@ -4,5 +4,5 @@
      when this product is installed. -->
 <layers>
     <layer name="medialog.fullpagetheme.customization.layer"
-      interface="medialog.fullpagetheme.interfaces.ICustomTheme" />
+      interface="medialog.fullpagetheme.interfaces.IFullpageTheme" />
 </layers>

@@ -3,18 +3,19 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>fullPage.js A simple Demo</title>
+	<title>Medialog Fullpagetheme</title>
 	<link rel="stylesheet" type="text/css" href="++theme++medialog.fullpagetheme/static/fullpage.css" />	
     
     <!-- Old Le styles -->
-    <link href="++theme++bootstrap-framework/css/bootstrap.css" rel="stylesheet">
+    <!--link href="++theme++bootstrap-framework/css/bootstrap.css" rel="stylesheet"-->
  
        
     <!-- Latest compiled and minified CSS -->
 	<!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" -->
     
     <!-- custom layout -->
-    <link href="++theme++medialog.childtheme/static/childtheme.css" rel="stylesheet">  
+    <!--link href="++theme++medialog.childtheme/static/childtheme.css" rel="stylesheet"-->  
+    <!-- Font -->
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
  
 
@@ -24,27 +25,37 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="++theme++bootstrap-framework/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="++theme++bootstrap-framework/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="++theme++bootstrap-framework/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="++theme++bootstrap-framework/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="++theme++bootstrap-framework/assets/ico/favicon.png">
+
+    <link rel="shortcut icon" type="image/x-icon"
+          href="bergensiana-favicon.ico"/>
+    <link rel="apple-touch-icon"
+          href="bergensiana-apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="bergensiana-apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="bergensiana-apple-touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="bergensiana-apple-touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57"
+          href="bergensiana-apple-touch-icon-57x57-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed"
+          href="bergensiana-apple-touch-icon-precomposed.png" />
   </head>
 
   <body>
 
 
 <body>
-  <div id="mainnav">
-  	<!-- ul id="portal-globalnav" /  -->
-  </div>
- 
+  <!-- div id="mainnav">
+  	<ul id="portal-globalnav" />
+  </div -->
+    <section id="portal-toolbar" />
   	<div id="content-core" />
- 
+
 </body>
 
-    <!-uncomment these for old jqueryui & jquery -->
-	<!--script src="++resource++plone.app.jquery.js"></script-->
+    <!-- uncomment these for old jqueryui & jquery -->
+	<!-- script src="++resource++plone.app.jquery.js"></script-->
 	<!-- script src="collective.js.jqueryui.custom.min.js"></script-->
 	<script type="text/javascript" src="++theme++medialog.fullpagetheme/static/jquery.fullPage.js">
 	</script>
@@ -52,11 +63,44 @@
 		$(document).ready(function() {
 			$('#content-core').fullpage({
 			    sectionSelector: '.section .visualIEFloatFix',
-				menu: "#menu",
-        		fixedElements: '#menu',
-        		responsive: 1,
+				//Navigation
+        
+			//Scrolling
+			css3: true,
+			scrollingSpeed: 700,
+			autoScrolling: true,
+			fitToSection: true,
+			fitToSectionDelay: 1000,
+			scrollBar: false,
+			easing: 'easeInOutCubic',
+			easingcss3: 'ease',
+			loopBottom: false,
+			loopTop: false,
+			loopHorizontal: true,
+			continuousVertical: false,
+			scrollOverflow: false,
+			touchSensitivity: 15,
+			normalScrollElementTouchThreshold: 5,
+			
+			//Design
+			paddingTop: '3em',
+        	paddingBottom: '10px',
+       		fixedElements: '#menu',
+        	responsiveWidth: 0,
+        	responsiveHeight: 0,
+
+			//Accessibility
+			keyboardScrolling: true,
+			animateAnchor: true,
+			recordHistory: true,
+ 
+			//Custom selectors
+			sectionSelector: '.section',
+			slideSelector: '.slide',
+
 			});
 		});		
 	</script>
+ 
 
 </html>

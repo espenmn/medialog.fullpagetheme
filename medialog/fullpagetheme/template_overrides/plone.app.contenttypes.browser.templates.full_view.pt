@@ -1,16 +1,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
-      xmlns:tal="http://xml.zope.org/namespaces/tal"
-      xmlns:metal="http://xml.zope.org/namespaces/metal"
-      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-      lang="en"
-      metal:use-macro="here/main_template/macros/master"
-      i18n:domain="plone">
-
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    lang="en"
+    metal:use-macro="context/main_template/macros/master"
+    i18n:domain="plone">
 <body>
- 
+
 <metal:content-core fill-slot="content-core">
-<metal:block use-macro="context/standard_view/macros/content-core">
- 
+<metal:block define-macro="content-core">
+  <metal:listing use-macro="context/@@listing_view/macros/content-core">
+    <!-- we don't want the dl -->
     <metal:entries fill-slot="entries">
     	<ul id="menu">
   			<tal:loop	 tal:repeat="item batch">
@@ -24,24 +24,23 @@
     			</li>	 
     		</tal:loop>
    		</ul>
-	
-    <metal:block use-macro="context/standard_view/macros/entries">
-
-    <metal:entry fill-slot="entry"> 
+      <metal:block use-macro="context/@@listing_view/macros/entries">
+        <metal:entry fill-slot="entry">
 		<div class="section" 
 			 tal:define="realobject python:item.getObject();
 			 url realobject/absolute_url;
 			 logo python:'background-image:url(' + str(url) + '/@@images/image)'"
 			 tal:attributes="data-anchor item/id; 
+			 id item/id;
 			 style logo">
  
         	<div tal:define="realobject python:item.getObject()"
              	tal:replace="structure realobject/folder_full_view_item" />
 		</div>
-    </metal:entry>
-    </metal:block>
+        </metal:entry>
+      </metal:block>
     </metal:entries>
-
+  </metal:listing>
 </metal:block>
 </metal:content-core>
 

@@ -7,75 +7,45 @@
     xmlns:xi="http://www.w3.org/2001/XInclude">
 
 
+ 
+ 
+ 		<!-- Import Bergensiana rules -->
+  		<xi:include href="++theme++bergensiana/rules.xml" />
+ 		<!--theme href="++theme++bergensiana/index.html" / -->
 
-      <!-- AJAX: Folder listings -->
-	  <rules css:if-content="body > #folderlisting-main-table">
-		<xi:include href="/++theme++bootstrap-framework/rules/edit.xml"/>
-		<xi:include href="/++theme++bootstrap-framework/rules/forms.xml"/>
-	  </rules>
-	  <!-- AJAX: Search page results -->
-		<rules css:if-content="body > #updated-search-results-number">
-		<xi:include href="/++theme++bootstrap-framework/rules/general.xml"/>
-	  </rules>
-
-	  <!-- The condition makes sure that theme is only applied when served in the 
-		   plone main_template. This is necessary for functional edit popups in 
-		   Tiny, for example. -->
-		   
-		   
-		   
-		   
-	  <rules css:if-content="#visual-portal-wrapper">
-	   <rules css:if-not-content=".template-all_content">
-
-		  <theme href="++theme++medialog.childtheme/index.html" />
-		  <drop css:theme-children="body"/>
-		  <before css:theme-children="body" css:content-children="body"/>
-		</rules>
-
-		<!-- Head rules
-			 ================================================================== -->
-		<xi:include href="/++theme++bootstrap-framework/rules/head-base.xml"/>
-		<xi:include href="/++theme++bootstrap-framework/rules/head-theme.xml"/>
-
-		<!-- Body rules
-			 ================================================================== -->
-		<!-- xi:include href="/++theme++bootstrap-framework/rules/header-inverse.xml"/ -->
-		<xi:include href="/++theme++bootstrap-framework/rules/header.xml"/>
-   
-		<xi:include href="/++theme++bootstrap-framework/rules/grid.xml"/>
-		<xi:include href="/++theme++bootstrap-framework/rules/columns.xml"/>
-		<xi:include href="/++theme++bootstrap-framework/rules/lead.xml"/>
-		<xi:include href="/++theme++bootstrap-framework/rules/content.xml"/>
-		<xi:include href="/++theme++bootstrap-framework/rules/forms.xml"/>
-		<xi:include href="/++theme++bootstrap-framework/rules/portlets.xml"/>
-		<xi:include href="/++theme++bootstrap-framework/rules/edit.xml"/>
-		<xi:include href="/++theme++bootstrap-framework/rules/footer-narrow.xml"/>
-		<xi:include href="/++theme++bootstrap-framework/rules/general.xml"/>
-
-		<!-- Place the content 
-			 .................................................................. -->
-
-		<after css:theme-children="body">
-			<!-- version 2 -->
-			<script src="/++theme++bootstrap-framework/js/bootstrap.min.js"></script>
-		
-			<!-- Latest compiled and minified JavaScript -->
-			<!-- script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script-->
+		<after theme-children="/html/head" >     
+           <link href="++theme++bergensiana/less/bergensiana-compiled.css" 
+            	 rel="stylesheet"/>
 		</after>
-
-
-	  </rules>
-	
     
-        <!-- Apply the following rules to all-content view -->
-    <rules css:if-content=".template-all_content">
+    <!-- Apply the following rules to all-content view -->
+    <rules css:if-content=".template-full_view">
 
-        <theme href="index.html" />
+        <theme href="++theme++medialog.fullpagetheme/index.html" />
 
         <replace css:content="#content-core" css:theme="#content-core" />
         <replace css:content="#portal-globalnav" css:theme="#portal-globalnav" />
 
+		
+		
+		<!-- Head rules
+			 ================================================================== -->
+
+
+		<!-- Body rules
+			 ================================================================== -->
+
+
+		<!-- Place the content 
+			 .................................................................. -->
+	    
+	    <after css:theme-children="body">
+			<!-- version 2 -->
+			<!-- script src="/++theme++bootstrap-framework/js/bootstrap.min.js"></script -->
+		
+			<!-- Latest compiled and minified JavaScript -->
+			<!-- script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script-->
+		</after>
 
     </rules>
     

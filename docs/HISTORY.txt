@@ -1,6 +1,13 @@
 Changelog
 =========
 
+0.3
+-------------------
+
+- Switched to Plone 5 with dependency on medialog.bergensiana theme
+
+
+
 0.2
 -------------------
 

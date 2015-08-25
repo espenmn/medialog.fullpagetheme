@@ -1,4 +1,7 @@
-/* @override http://localhost:8080/FullPlone/++theme++medialog.fullpagetheme/++theme++medialog.fullpagetheme/static/fullpage.css */
+/* @override 
+	http://localhost:8080/FullPlone/++theme++medialog.fullpagetheme/++theme++medialog.fullpagetheme/static/fullpage.css
+	http://localhost:8080/okologisk/++theme++medialog.fullpagetheme/++theme++medialog.fullpagetheme/static/fullpage.css
+*/
 
 /* Stylesheet for the 'ICustomTheme' Plone browser layer */
 
@@ -27,14 +30,22 @@ body #portal-globalnav {
 
 #menu {
 	position: absolute;
-	top: 10px;
+	top: 0;
 	z-index:9;
-	text-align: center;
+	text-align:right;
 	width: 100%;
-	margin-top: 20px;
+	margin-top: 0;
+	padding: 1.2em 2em 1.8em;
 	list-style-image: none;
 	list-style-type: none;
+	background: black;
 }
+
+ .fp-viewing-0  #menu {
+	background: transparent;
+}
+
+ 
 
 #menu li {
 	 
@@ -44,7 +55,16 @@ body #portal-globalnav {
 	display: inline-block;
 }
 
- 
+#menu li a {
+	 
+	color: white;
+	padding-left: 1em;
+	padding-right: 1em:
+}
+
+ .fp-viewing-0  #menu a {
+	color:  #999;
+}
 
 #portal-globalnav {
 	position: fixed;
@@ -57,12 +77,40 @@ body #portal-globalnav {
 .fp-tableCell .visualIEFloatFix {
 	background: white;
 	opacity: 0.8;
-	max-width: 30%;
+	max-width: 60%;
 	margin: auto;
 	padding: 1em;
 	min-height: 15%;
 	border-radius: 0.5em;
 }
+
+a.summary.url {
+	color: #333;
+	font-size: 190%;
+	line-height: 200%;
+}
+
+div.description {
+	font-weight: bold;
+	padding: 0 1em 1em;
+	font-size: 110%;
+	color: #666;
+}
+
+p {
+	font-size: 110%;
+	line-height: 150%;
+}
+
+  p.more  {
+	font-size: 90%;
+	text-align: right;
+}
+
+
+
+
+
 
 @media (max-width: 768px) {
             .container { margin:0 10px;}

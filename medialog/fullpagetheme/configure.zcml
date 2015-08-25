@@ -22,7 +22,7 @@
 
   <browser:jbot
       directory="template_overrides"
-      layer=".interfaces.ICustomTheme"
+      layer=".interfaces.IFullpageTheme"
       />
 
 </configure>
