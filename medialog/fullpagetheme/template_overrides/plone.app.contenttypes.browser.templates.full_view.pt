@@ -23,8 +23,9 @@
     					tal:content="item/Title" />
     			</li>	 
     		</tal:loop>
-   		</ul>
+   		</ul>            
       <metal:block use-macro="context/@@listing_view/macros/entries">
+
         <metal:entry fill-slot="entry">
 		<div class="section" 
 			 tal:define="realobject python:item.getObject();

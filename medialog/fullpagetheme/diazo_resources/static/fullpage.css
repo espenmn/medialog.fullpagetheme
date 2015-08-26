@@ -1,14 +1,11 @@
-/* @override 
-	http://localhost:8080/FullPlone/++theme++medialog.fullpagetheme/++theme++medialog.fullpagetheme/static/fullpage.css
-	http://localhost:8080/okologisk/++theme++medialog.fullpagetheme/++theme++medialog.fullpagetheme/static/fullpage.css
-*/
+/* @override http://localhost:8080/okologisk/++theme++medialog.fullpagetheme/++theme++medialog.fullpagetheme/static/fullpage.css */
 
 /* Stylesheet for the 'ICustomTheme' Plone browser layer */
 
 div.fp-tableCell {
 	text-align: center;
 /* 	font-size: 130%; */
-	padding-top: 25%;
+	padding-top: 1em;
 	padding-left: 30px;
 	padding-right: 30px;
 	overflow: scroll;
@@ -32,7 +29,7 @@ body #portal-globalnav {
 	position: absolute;
 	top: 0;
 	z-index:9;
-	text-align:right;
+	text-align:center;
 	width: 100%;
 	margin-top: 0;
 	padding: 1.2em 2em 1.8em;
@@ -41,11 +38,18 @@ body #portal-globalnav {
 	background: black;
 }
 
- .fp-viewing-0  #menu {
+.fp-viewing-0  #menu {
 	background: transparent;
 }
 
- 
+
+body[class*="fp-viewing"]  #viewlet-above-content {
+	display: none;
+}
+
+body[class*="fp-viewing-0"]  #viewlet-above-content {
+	display: block;
+}
 
 #menu li {
 	 
@@ -63,7 +67,7 @@ body #portal-globalnav {
 }
 
  .fp-viewing-0  #menu a {
-	color:  #999;
+	color:  #CCC;
 }
 
 #portal-globalnav {

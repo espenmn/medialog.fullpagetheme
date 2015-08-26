@@ -6,10 +6,7 @@
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     xmlns:xi="http://www.w3.org/2001/XInclude">
 
-
- 
- 
- 		<!-- Import Bergensiana rules -->
+		<!-- Import Bergensiana rules -->
   		<xi:include href="++theme++bergensiana/rules.xml" />
  		<!--theme href="++theme++bergensiana/index.html" / -->
 
@@ -22,34 +19,9 @@
     <rules css:if-content=".template-full_view">
 
         <theme href="++theme++medialog.fullpagetheme/index.html" />
-
         <replace css:content="#content-core" css:theme="#content-core" />
         <replace css:content="#portal-globalnav" css:theme="#portal-globalnav" />
-
+ 		<drop css:content="#portal-breadcrumbs" />
 		
-		
-		<!-- Head rules
-			 ================================================================== -->
-
-
-		<!-- Body rules
-			 ================================================================== -->
-
-
-		<!-- Place the content 
-			 .................................................................. -->
-	    
-	    <after css:theme-children="body">
-			<!-- version 2 -->
-			<!-- script src="/++theme++bootstrap-framework/js/bootstrap.min.js"></script -->
-		
-			<!-- Latest compiled and minified JavaScript -->
-			<!-- script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script-->
-		</after>
-
     </rules>
-    
-
-
-
 </rules>
