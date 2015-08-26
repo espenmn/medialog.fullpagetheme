@@ -22,6 +22,6 @@
         <replace css:content="#content-core" css:theme="#content-core" />
         <replace css:content="#portal-globalnav" css:theme="#portal-globalnav" />
  		<drop css:content="#portal-breadcrumbs" />
-		
+		 <drop css:theme="#services" />
     </rules>
 </rules>
