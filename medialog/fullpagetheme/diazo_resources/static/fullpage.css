@@ -54,16 +54,23 @@ body[class*="fp-viewing-0"]  #viewlet-above-content {
 #menu li {
 	 
 	list-style-image: none;
-	margin-right: 0.5em;
+	margin-right: 1.5em;
+	padding-bottom: 3px;
 	list-style-type: none;
 	display: inline-block;
 }
 
 #menu li a {
-	 
-	color: white;
-	padding-left: 1em;
-	padding-right: 1em:
+	color: white; 
+}
+
+#menu li:hover  a {
+	text-decoration: none;
+}
+
+#menu li.active,
+#menu li:hover   {
+	border-bottom: 2px solid white;
 }
 
  .fp-viewing-0  #menu a {
