@@ -73,6 +73,10 @@ body[class*="fp-viewing-0"]  #viewlet-above-content {
 	border-bottom: 2px solid white;
 }
 
+hr {
+	clear: both;
+}
+
  .fp-viewing-0  #menu a {
 	color:  #CCC;
 }
