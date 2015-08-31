@@ -9,6 +9,8 @@
 		<!-- Import Bergensiana rules -->
   		<xi:include href="++theme++bergensiana/rules.xml" />
  		<!--theme href="++theme++bergensiana/index.html" / -->
+		<drop css:content="#services" />
+		<drop css:content="#feature" />   
 
 		<after theme-children="/html/head" >     
            <link href="++theme++bergensiana/less/bergensiana-compiled.css" 
@@ -17,11 +19,10 @@
     
     <!-- Apply the following rules to all-content view -->
     <rules css:if-content=".template-full_view">
-
         <theme href="++theme++medialog.fullpagetheme/index.html" />
         <replace css:content="#content-core" css:theme="#content-core" />
         <replace css:content="#portal-globalnav" css:theme="#portal-globalnav" />
  		<drop css:content="#portal-breadcrumbs" />
-		 <drop css:theme="#services" />
+
     </rules>
 </rules>

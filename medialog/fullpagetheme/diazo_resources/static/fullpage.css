@@ -39,9 +39,16 @@ body #portal-globalnav {
 }
 
 .fp-viewing-0  #menu {
-	background: transparent;
+ 
+  background: -webkit-linear-gradient(bottom,rgba(0,0,0,100), rgba(0,0,0,0));  /*Safari 5.1-6*/
+  background: -o-linear-gradient(bottom,rgba(0,0,0,100), rgba(0,0,0,0));  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(bottom,rgba(0,0,0,100), rgba(0,0,0,0));  /*Fx 3.6-15*/
+  background: linear-gradient(to bottom, rgba(0,0,0,100), rgba(0,0,0,0)); /*Standard*/
 }
-
+.fp-viewing-0  #menu a {
+ 
+	color:  white;
+}
 
 body[class*="fp-viewing"]  #viewlet-above-content {
 	display: none;
