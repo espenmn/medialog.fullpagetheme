@@ -38,7 +38,7 @@ body #portal-globalnav {
 	background: black;
 }
 #menu #portal-logo{
-	margin-right: 5em;
+	margin-right: 2em;
 	margin-top: 0;
 	}
 	
@@ -60,7 +60,7 @@ body[class*="fp-viewing-0"]  #viewlet-above-content {
 #menu li {
 	 
 	list-style-image: none;
-	margin-right: 1.5em;
+	margin-left: 1.5em;
 	padding-bottom: 3px;
 	list-style-type: none;
 	display: inline-block;

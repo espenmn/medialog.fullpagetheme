@@ -12,7 +12,6 @@
   <metal:listing use-macro="context/@@listing_view/macros/content-core">
     <!-- we don't want the dl -->
     <metal:entries fill-slot="entries">
- 
     	<ul id="menu">
     		<li class="btn" data-menuanchor="home">
     		<a id="portal-logo"    title="Home"
@@ -23,7 +22,7 @@
    				i18n:attributes="title">
     			<img src="logo.png" alt="" title="home" 
     			tal:attributes="src logo_url" /></a>
-   			</li>
+   			</li>	
   			<tal:loop	 tal:repeat="item batch">
     			<li class="btn" 
     				tal:define="dokument  item/getId" 
@@ -35,12 +34,9 @@
     					tal:content="item/Title" />
     			</li>	 
     		</tal:loop>
-   		</ul>     
-   		
+   		</ul>      		
     <metal:block use-macro="context/@@listing_view/macros/entries">
-
         <metal:entry fill-slot="entry">
-
 		<div class="section" 
 			 tal:define="realobject python:item.getObject();
 			 url realobject/absolute_url;
@@ -49,7 +45,6 @@
 			 id item/id;
 			 style logo"
 			 tal:condition="not:item/exclude_from_nav" >
- 
         	<div tal:define="realobject python:item.getObject()"
              	tal:replace="structure realobject/folder_full_view_item" />
 		</div>
