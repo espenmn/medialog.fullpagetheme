@@ -14,12 +14,15 @@
     <metal:entries fill-slot="entries">
  
     	<ul id="menu">
-    		<li class="btn">
+    		<li class="btn" data-menuanchor="home">
     		<a id="portal-logo"    title="Home"
+    			tal:define="site_url view/navigation_root_url;
+    			logo_url python:site_url + '/logo.png'"
    				tal:attributes="href view/navigation_root_url"
    				i18n:domain="plone"
    				i18n:attributes="title">
-    			<img src="logo.png" alt="" title="home" /></a>
+    			<img src="logo.png" alt="" title="home" 
+    			tal:attributes="src logo_url" /></a>
    			</li>
   			<tal:loop	 tal:repeat="item batch">
     			<li class="btn" 

@@ -32,22 +32,21 @@ body #portal-globalnav {
 	text-align:center;
 	width: 100%;
 	margin-top: 0;
-	padding: 1.2em 2em 1.8em;
+	padding: 1.6em 2em 1.2em;
 	list-style-image: none;
 	list-style-type: none;
 	background: black;
 }
-
+#menu #portal-logo{
+	margin-right: 5em;
+	margin-top: 0;
+	}
+	
 .fp-viewing-0  #menu {
- 
-  background: -webkit-linear-gradient(bottom,rgba(0,0,0,100), rgba(0,0,0,0));  /*Safari 5.1-6*/
-  background: -o-linear-gradient(bottom,rgba(0,0,0,100), rgba(0,0,0,0));  /*Opera 11.1-12*/
-  background: -moz-linear-gradient(bottom,rgba(0,0,0,100), rgba(0,0,0,0));  /*Fx 3.6-15*/
-  background: linear-gradient(to bottom, rgba(0,0,0,100), rgba(0,0,0,0)); /*Standard*/
+  background: #FFF;
 }
-.fp-viewing-0  #menu a {
- 
-	color:  white;
+.fp-viewing-0  #menu li a {
+ 	color:  #444;
 }
 
 body[class*="fp-viewing"]  #viewlet-above-content {
