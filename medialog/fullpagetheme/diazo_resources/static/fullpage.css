@@ -1,4 +1,7 @@
-/* @override http://localhost:8080/okologisk/++theme++medialog.fullpagetheme/++theme++medialog.fullpagetheme/static/fullpage.css */
+/* @override 
+	http://localhost:8080/okologisk/++theme++medialog.fullpagetheme/++theme++medialog.fullpagetheme/static/fullpage.css
+	http://localhost:8080/++theme++medialog.fullpagetheme/static/fullpage.css
+*/
 
 /* Stylesheet for the 'ICustomTheme' Plone browser layer */
 
@@ -6,8 +9,8 @@ div.fp-tableCell {
 	text-align: center;
 /* 	font-size: 130%; */
 	padding-top: 10%;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 0;
+	padding-right:0;
 	overflow: scroll;
 }
 
@@ -162,6 +165,39 @@ img.newsImage {
 	
 }
 
+ .section {
+	background-size: cover;
+}
+
+div#slides.section .fp-tableCell .visualIEFloatFix {
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	min-height: 100%; 	
+	
+}
+
+#slides   h2.headline,
+ {
+	display: none !important;
+	visibility: hidden;
+}
+
+ 
+div#slides ul,
+div#slides  li,
+div#slides  img {
+	margin: 0;
+	padding: 0;
+	list-style-image: none;
+	list-style-type: none;
+	width: 100%;
+	min-width: 100%;
+ 
+}
+ 
+
+
 @media (max-width: 768px) {
             .container { margin:0 10px;}
             h1{ font-size: 26px !important;	}
@@ -172,12 +208,12 @@ img.newsImage {
             h1{ font-size: 34px !important;	}
  
         }
- 
- 
- .section {
-	background-size: cover;
-}
 
- {
-	
+#slider {
+	position: absolute;
+	top:  0;;
 }
+ 
+ 
+
+ 
