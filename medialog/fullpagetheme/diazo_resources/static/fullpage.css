@@ -182,8 +182,27 @@ div#slides.section .fp-tableCell .visualIEFloatFix {
 	display: none !important;
 	visibility: hidden;
 }
+ 
+#slider .textbox {
+	width: 100%;
+	position: fixed;
+	display: block;
+	top:  30%;
+	z-index: 99999;
+ 	text-align: center;
+	color: white;
+	font: 150% Georgia, "Times New Roman", Times, serif;
+}
+
+ body #slider h1 {
+	color: white;
+	font-size: 237% !important;
+	font-weight: bold;
+	text-transform: uppercase;
+}
 
  
+
 div#slides ul,
 div#slides  li,
 div#slides  img {
@@ -195,7 +214,7 @@ div#slides  img {
 	min-width: 100%;
  
 }
- 
+
 
 
 @media (max-width: 768px) {

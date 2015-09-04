@@ -1,0 +1,66 @@
+<section id="fullpage"  
+		 tal:define="folder_is nocall:context/fullpage|nothing">
+    <div class="container"  tal:condition="folder_is">
+      <div class="container">
+           <div class="center wow fadeInDown">
+                <h2 tal:content="context/fullpage/Title" />
+                <p class="lead" 
+                	tal:content="context/fullpage/Description"  />
+            </div>
+
+		<ul id="menu">
+    		<li class="btn" data-menuanchor="home">
+    		<a id="portal-logo"    title="Home"
+    			tal:define="site_url view/navigation_root_url;
+    			logo_url python:site_url + '/logo.png'"
+   				tal:attributes="href view/navigation_root_url"
+   				i18n:domain="plone"
+   				i18n:attributes="title">
+    			<img src="logo.png" alt="" title="home" 
+    			tal:attributes="src logo_url" /></a>
+   			</li>	
+  			<tal:loop	 tal:repeat="item batch">
+    			<li class="btn" 
+    				tal:define="dokument  item/getId" 
+    				tal:attributes="data-menuanchor dokument"
+    				tal:condition="not:item/exclude_from_nav" >
+    				<a  href="" 
+    					tal:define="link python:'#' + dokument"
+    					tal:attributes="href link"  
+    					tal:content="item/Title" />
+    			</li>	 
+    		</tal:loop>
+   		</ul>     
+
+
+            <div class="row">
+                <div class="features" >
+                    <div tal:repeat="item 
+                    	context/@@folderListing"
+                        class="col-md-4 col-sm-6 wow fadeInDown animated" 
+                        data-wow-delay="600ms" data-wow-duration="1000ms" 
+                        style="visibility: visible; animation-duration: 1000ms; 
+                        animation-delay: 600ms; animation-name: fadeInDown;">
+                        
+                        <div class="fullpage-section fa" tal:define="realobject python:item.getObject();
+			 url realobject/absolute_url;
+			 logo python:'background-image:url(' + str(url) + '/@@images/image)'"
+			 tal:attributes="data-anchor item/id; 
+			 id item/id;
+			 style logo"
+			 tal:condition="not:item/exclude_from_nav" >
+                    <div tal:define="realobject python:item.getObject()"
+             			tal:replace="structure realobject/folder_full_view_item" />
+                </div>    
+                        
+                        
+             
+                                
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

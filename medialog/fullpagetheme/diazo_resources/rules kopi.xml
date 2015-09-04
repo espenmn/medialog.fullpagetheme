@@ -20,7 +20,7 @@
     <!-- Apply the following rules to all-content view -->
     <rules css:if-content=".template-full_view">
 
-        <theme href="++theme++medialog.fullpagetheme/fullpage.html" />
+        <theme href="++theme++medialog.fullpagetheme/index.html" />
         <replace css:content="#content-core" css:theme="#content-core" />
          <!-- replace css:content="#portal-globalnav" css:theme="#portal-globalnav" /-->
  		<drop css:content="#portal-breadcrumbs" />
@@ -29,13 +29,13 @@
     </rules>
     
     <!-- Apply the following rules to front page -->
-    <rules css:if-content=".section-fullpage">
+    <rules css:if-content=".section-front-page">
 
-        <theme href="++theme++medialog.fullpagetheme/fullpage.html" />
-
- 	      <replace	css:theme="#fullpage"     
- 	      		   	css:content="#fullpage"    
- 	      			href="@@theme-fragment/full-page" />  
+        <theme href="++theme++medialog.fullpagetheme/front-page.html" />
+        <replace css:content="#content-core" css:theme="#content-core" />
+         <!-- replace css:content="#portal-globalnav" css:theme="#portal-globalnav" /-->
+ 		<drop css:content="#portal-breadcrumbs" />
+ 		<!-- drop css:theme="#viewlet-above-content" / -->
  
     </rules>
     
