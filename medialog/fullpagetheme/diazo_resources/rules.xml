@@ -8,7 +8,7 @@
 
 		<!-- Import Bergensiana rules -->
   		<xi:include href="++theme++bergensiana/rules.xml" />
- 		<!--theme href="++theme++bergensiana/index.html" / -->
+ 		<theme href="++theme++bergensiana/index.html" />
 		<drop css:content="#services" />
 		<drop css:content="#feature" />   
 
@@ -33,7 +33,7 @@
 
         <theme href="++theme++medialog.fullpagetheme/fullpage.html" />
 
- 	      <replace	css:theme="#fullpage"     
+ 	      <replace	css:theme="#content-core"     
  	      		   	css:content="#fullpage"    
  	      			href="@@theme-fragment/full-page" />  
  
