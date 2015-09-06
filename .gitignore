@@ -25,3 +25,5 @@ build/
 buid/*
 dist/
 *.pyc
+
+*.pyc
