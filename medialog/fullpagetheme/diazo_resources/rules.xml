@@ -6,16 +6,21 @@
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     xmlns:xi="http://www.w3.org/2001/XInclude">
 
-		<!-- Import Bergensiana rules -->
-  		<xi:include href="++theme++bergensiana/rules.xml" />
- 		<!--theme href="++theme++bergensiana/index.html" /-->
-		<drop css:content="#services" />
-		<drop css:content="#feature" />   
+    <xi:include href="++theme++bergensiana/rules.xml" />
+    <after theme-children="/html/head" >     
+       <link href="++theme++bergensiana/less/bergensiana-compiled.css" 
+             rel="stylesheet"/>
+    </after>
+    
+    <rules css:if-not-content=".portaltype-folder.section-fullpage, .template-full_view ">
+            <!-- Import Bergensiana rules -->
 
-		<after theme-children="/html/head" >     
-           <link href="++theme++bergensiana/less/bergensiana-compiled.css" 
-            	 rel="stylesheet"/>
-		</after>
+            <theme href="++theme++bergensiana/index.html" />
+            <drop css:content="#services" />
+            <drop css:content="#feature" />   
+
+
+    </rules>
     
     <!-- Apply the following rules to all-content view -->
     <rules css:if-content=".template-full_view">

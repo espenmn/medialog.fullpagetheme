@@ -13,7 +13,7 @@
     <!-- we don't want the dl -->
     <metal:entries fill-slot="entries">
     	<ul id="menu">
-    		<li class="btn" data-menuanchor="home">
+    		<li class="btn">
     		<a id="portal-logo"    title="Home"
     			tal:define="site_url view/navigation_root_url;
     			logo_url python:site_url + '/logo.png'"

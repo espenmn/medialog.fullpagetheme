@@ -7,7 +7,7 @@
         </div-->
 
 		<ul id="menu">
-    		<li class="btn" data-menuanchor="home">
+    		<li class="btn">
     		<a id="portal-logo"   
     			tal:define="url context/portal_url"
     		    title="Home"
@@ -34,24 +34,19 @@
         </ul>    
 
     
-                <div tal:repeat="item 
-                    	context/@@folderListing"
-                        class="wow fadeInDown animated" 
-                        data-wow-delay="600ms" data-wow-duration="1000ms" 
-                        style="visibility: visible; animation-duration: 1000ms; 
-                        animation-delay: 600ms; animation-name: fadeInDown;">
+                <tal:lopp tal:repeat="item 
+                    	context/@@folderListing">
                         
                     <section class="section fa" 
                              tal:condition="not:item/exclude_from_nav" 
                              tal:define="realobject item/getObject;
                              url realobject/absolute_url;
                              logo python:'background-image:url(' + str(url) + '/@@images/image)';"
-                             tal:attributes="data-anchor item/id; 
-			                 id item/id;
+                             tal:attributes="id item/id;
 			                 style logo">
                         <div tal:replace="structure realobject/folder_full_view_item" />
                     </section>    
-                </div>
+                </tal:lopp>
  
  
  
