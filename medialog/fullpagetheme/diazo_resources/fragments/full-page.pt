@@ -1,5 +1,5 @@
 <div id="fullpage">
-    <div class="container">
+ 
         <!--div class="center wow fadeInDown">
             <h2 tal:content="context/Title" />
             <p class="lead" 
@@ -7,21 +7,20 @@
         </div-->
 
 		<ul id="menu">
-    		<!--li class="btn" data-menuanchor="home">
-    		<a id="portal-logo"    
+    		<li class="btn" data-menuanchor="home">
+    		<a id="portal-logo"   
+    			tal:define="url context/portal_url"
     		    title="Home"
-    			tal:define="site_url here/navigation_root_url;
-    			logo_url python:site_url + '/logo.png'"
-   				tal:attributes="href view/navigation_root_url"
+    			href="/"
    				i18n:domain="plone"
-   				i18n:attributes="title">
-    			<img src="logo.png" alt="" title="home" 
-    			tal:attributes="src logo_url" /></a>
-   			</li -->	
+   				i18n:attributes="href url">
+    			<img src="logo.png" alt="" title="home"   />
+    		</a>
+   			</li>	
    			
   			<tal:loop	 
   			    tal:repeat="item 
-                    	context/@@folderListing">
+                    context/@@folderListing">
     			<li class="btn" 
     				tal:define="dokument  item/getId" 
     				tal:attributes="data-menuanchor dokument"
@@ -37,20 +36,25 @@
     
                 <div tal:repeat="item 
                     	context/@@folderListing"
-                        class="col-md-4 col-sm-6 wow fadeInDown animated" 
+                        class="wow fadeInDown animated" 
                         data-wow-delay="600ms" data-wow-duration="1000ms" 
                         style="visibility: visible; animation-duration: 1000ms; 
                         animation-delay: 600ms; animation-name: fadeInDown;">
                         
                     <section class="section fa" 
                              tal:condition="not:item/exclude_from_nav" 
-                             tal:define="realobject item/getObject"
+                             tal:define="realobject item/getObject;
+                             url realobject/absolute_url;
+                             logo python:'background-image:url(' + str(url) + '/@@images/image)';"
                              tal:attributes="data-anchor item/id; 
-			                 id item/id">
+			                 id item/id;
+			                 style logo">
                         <div tal:replace="structure realobject/folder_full_view_item" />
                     </section>    
                 </div>
  
-    </div>
+ 
+ 
 </div>
 
+ 

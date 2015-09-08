@@ -8,7 +8,7 @@
 
 		<!-- Import Bergensiana rules -->
   		<xi:include href="++theme++bergensiana/rules.xml" />
- 		<theme href="++theme++bergensiana/index.html" />
+ 		<!--theme href="++theme++bergensiana/index.html" /-->
 		<drop css:content="#services" />
 		<drop css:content="#feature" />   
 
@@ -29,11 +29,11 @@
     </rules>
     
     <!-- Apply the following rules to front page -->
-    <rules css:if-content=".section-fullpage">
+    <rules css:if-content=".portaltype-folder.section-fullpage ">
 
         <theme href="++theme++medialog.fullpagetheme/fullpage.html" />
 
- 	      <replace	css:theme="#content-core"     
+ 	      <replace	css:theme-children="#content-core"     
  	      		   	css:content="#fullpage"    
  	      			href="@@theme-fragment/full-page" />  
  
