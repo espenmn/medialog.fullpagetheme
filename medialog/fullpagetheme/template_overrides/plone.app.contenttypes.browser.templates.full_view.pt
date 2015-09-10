@@ -42,7 +42,6 @@
 			 url realobject/absolute_url;
 			 logo python:'background-image:url(' + str(url) + '/@@images/image)'"
 			 tal:attributes="data-anchor item/id; 
-			 id item/id;
 			 style logo"
 			 tal:condition="not:item/exclude_from_nav" >
         	<div tal:define="realobject python:item.getObject()"

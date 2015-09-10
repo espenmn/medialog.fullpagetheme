@@ -60,7 +60,7 @@
     
  
 
- 	<section  id="above-content" />
+ 	<!--section  id="above-content" / -->
  	<div id="content-core" />
 
  
@@ -72,21 +72,21 @@
 	</script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$('#content-core, #fullpage').fullpage({
+			$('#fullpage').fullpage({
 
 				//Navigation
         
 			//Scrolling
 			css3: true,
 			scrollingSpeed: 700,
-			autoScrolling: true,
+			//autoScrolling: true,
 			//fitToSection: true,
 			fitToSectionDelay: 1000,
 			scrollBar: false,
 			easing: 'easeInOutCubic',
 			easingcss3: 'ease',
 			touchSensitivity: 15,
-			normalScrollElementTouchThreshold: 5,
+			//normalScrollElementTouchThreshold: 5,
 			
 			//Design
 			paddingTop: '2em',
@@ -101,7 +101,7 @@
 			recordHistory: true,
  
 			//Custom selectors
-			//sectionSelector: '.section',
+			sectionSelector: '.section',
 			//slideSelector: '.slide',
 			
 			 menu: '#menu',
