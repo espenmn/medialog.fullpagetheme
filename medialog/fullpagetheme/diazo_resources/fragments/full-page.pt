@@ -23,7 +23,8 @@
                     context/@@folderListing">
     			<li class="btn" 
     				tal:define="dokument  item/getId" 
-    				tal:condition="not:item/exclude_from_nav" >
+    				tal:condition="not:item/exclude_from_nav" 
+    				tal:attributes="data-menuanchor dokument">
     				<a  href="" 
     					tal:define="link python:'#' + dokument"
     					tal:attributes="href link"  
@@ -41,7 +42,7 @@
                              tal:define="realobject item/getObject;
                              url realobject/absolute_url;
                              logo python:'background-image:url(' + str(url) + '/@@images/image)';"
-                             tal:attributes="data-menuanchor item/id;
+                             tal:attributes="data-anchor item/getId;
 			                 style logo">
 			            <div tal:replace="structure realobject/folder_full_view_item" />
 			        </span>

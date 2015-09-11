@@ -14,7 +14,8 @@
     <metal:entries fill-slot="entries">
     	<ul id="menu">
     		<li class="btn">
-    		<a id="portal-logo"    title="Home"
+    		<a id="portal-logo"    
+    			title="Home"
     			tal:define="site_url view/navigation_root_url;
     			logo_url python:site_url + '/logo.png'"
    				tal:attributes="href view/navigation_root_url"
@@ -23,14 +24,15 @@
     			<img src="logo.png" alt="" title="home" 
     			tal:attributes="src logo_url" /></a>
    			</li>	
-  			<tal:loop	 tal:repeat="item batch">
+  			<tal:loop tal:repeat="item batch">
     			<li class="btn" 
     				tal:define="dokument  item/getId" 
     				tal:attributes="data-menuanchor dokument"
     				tal:condition="not:item/exclude_from_nav" >
     				<a  href="" 
     					tal:define="link python:'#' + dokument"
-    					tal:attributes="href link"  
+    					tal:attributes="href link;  
+    					data-menuanchor item/getId"
     					tal:content="item/Title" />
     			</li>	 
     		</tal:loop>
@@ -42,6 +44,7 @@
 			 url realobject/absolute_url;
 			 logo python:'background-image:url(' + str(url) + '/@@images/image)'"
 			 tal:attributes="data-anchor item/id; 
+			 id item/id;
 			 style logo"
 			 tal:condition="not:item/exclude_from_nav" >
         	<div tal:define="realobject python:item.getObject()"
