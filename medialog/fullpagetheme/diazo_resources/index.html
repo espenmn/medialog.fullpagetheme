@@ -5,17 +5,28 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Medialog Fullpagetheme</title>
 	<link rel="stylesheet" type="text/css" href="++theme++medialog.fullpagetheme/static/fullpage.css" />	
-    <link href="++theme++medialog.bergensiana/css/animate.min.css" rel="stylesheet">
     
-    <script src="++theme++medialog.corlate/static/js/wow.min.js"></script>
-   
-    <!--link href="++theme++medialog.corlate/static/css/responsive.css" rel="stylesheet" -->
-    <!--[if lt IE 9]>
-    <script src="++theme++medialog.corlate/static/js/html5shiv.js"></script>
-    <script src="++theme++medialog.corlate/static/js/respond.min.js"></script>
-    <![endif]-->       
+    
+    <!-- Old Le styles -->
+    <!--link href="++theme++bootstrap-framework/css/bootstrap.css" rel="stylesheet"-->
  
- 
+     	<!-- Plone 5 -->
+    <link href="++plone++static/plone-legacy-compiled.css  rel="stylesheet">
+     <link href="++plone++static/plone-compiled.css  rel="stylesheet">
+	
+	<!-- core CSS -->
+    <link href="++theme++medialog.corlate/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="++theme++medialog.corlate/static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="++theme++medialog.corlate/static/css/animate.min.css" rel="stylesheet">
+    <link href="++theme++medialog.corlate/static/css/prettyPhoto.css" rel="stylesheet">
+    <link href="++theme++medialog.corlate/static/css/main.css" rel="stylesheet">
+    <link href="++theme++medialog.corlate/static/css/responsive.css" rel="stylesheet">
+       
+    <!-- Latest compiled and minified CSS -->
+	<!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" -->
+    
+    <!-- custom layout -->
+    <!--link href="++theme++medialog.childtheme/static/childtheme.css" rel="stylesheet"-->  
     <!-- Font -->
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
  
@@ -32,9 +43,9 @@
     <link rel="apple-touch-icon"
           href="++theme++bergensiana/bergensiana-apple-touch-icon.png" />
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
-        href="++theme++bergensiana/bergensiana-apple-touch-icon-144x144-precomposed.png"/>
+          href="++theme++bergensiana/bergensiana-apple-touch-icon-144x144-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114"
-          href="++theme++bergensiana/bergensiana-apple-touch-icon-114x114-precomposed.png"/>
+          href="++theme++bergensiana/bergensiana-apple-touch-icon-114x114-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72"
           href="++theme++bergensiana/bergensiana-apple-touch-icon-72x72-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" sizes="57x57"
@@ -59,42 +70,66 @@
     </div>
     </div-->
     
-
- 	<div id="content-core" />
  
-	<script type="text/javascript" src="++theme++medialog.fullpagetheme/static/jquery.fullPage.js"></script>
+
+ 	<section  id="above-content" />
+ 	<div id="content-core" />
+
+ 
+
+
+</body>
+
+
+
+
+ 	<script type="text/javascript" src="++theme++medialog.fullpagetheme/static/jquery.fullPage.js">
+	</script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$('#fullpage').fullpage({
+			$('#content-core, #fullpage').fullpage({
 
- 
+				//Navigation
+        
+			//Scrolling
+			css3: true,
+			scrollingSpeed: 700,
+			autoScrolling: true,
+			//fitToSection: true,
+			fitToSectionDelay: 1000,
+			scrollBar: false,
+			easing: 'easeInOutCubic',
+			easingcss3: 'ease',
+			touchSensitivity: 15,
+			normalScrollElementTouchThreshold: 5,
+			
+			//Design
+			paddingTop: '2em',
+        	//paddingBottom: '10px',
+       		fixedElements: '#menu',
+        	responsiveWidth: 0,
+        	responsiveHeight: 0,
+
+			//Accessibility
+			keyboardScrolling: true,
+			animateAnchor: true,
+			recordHistory: true,
  
 			//Custom selectors
 			sectionSelector: '.section',
 			slideSelector: '.slide',
 			
 			 menu: '#menu',
-			responsive: 700,
+			//responsive: 700,
 			});
 		});		
 	</script>
 	
-		
-	 <!-- javascript for slider -->
-     <script src="++theme++medialog.mobilethemeThree/assets/slider.min.js"></script>
-		<script>
-		$(function () {
-		
-		  // Slideshow 1
-		  $("#slider").responsiveSlides({
-		    maxwidth: 3000,
-		    speed: 800
-		  });
-		
-		});
+	    <script src="++theme++medialog.corlate/static/js/jquery.js"></script>
+    <script src="++theme++medialog.corlate/static/js/bootstrap.min.js"></script>
+    <script src="++theme++medialog.corlate/static/js/jquery.prettyPhoto.js"></script>
+    <script src="++theme++medialog.corlate/static/js/jquery.isotope.min.js"></script>
+    <script src="++theme++medialog.corlate/static/js/main.js"></script>
+    <script src="++theme++medialog.corlate/static/js/wow.min.js"></script>
 
-		</script> 	
-</body>
-</body>
- 
 </html>

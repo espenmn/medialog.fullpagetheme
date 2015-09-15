@@ -42,29 +42,10 @@
           href="++theme++bergensiana/bergensiana-apple-touch-icon-precomposed.png" />
   </head>
 
-  <body>
-
-
 <body>
-  <!-- div id="mainnav">
-  	<ul id="portal-globalnav" />
-  </div -->
- 
-    <section id="portal-toolbar" />
-    
-    <!-- feature  div class="section">
-    <div class="item visualIEFloatFix">
-    	<section  id="above-content" />
-    </div>
-    </div-->
-    
- 
-
+   <section id="portal-toolbar" />
  	<!--section  id="above-content" / -->
  	<div id="content-core" />
-
- 
-
 
 </body>
 
@@ -84,6 +65,9 @@
 			easingcss3: 'ease',
 			touchSensitivity: 15,
 			//normalScrollElementTouchThreshold: 5,
+			slidesNavigation: true,
+            slidesNavPosition: 'bottom',
+            loopHorizontal: true,
 			
 			//Design
 			paddingTop: '2em',
@@ -91,6 +75,9 @@
        		fixedElements: '#menu',
         	responsiveWidth: 0,
         	responsiveHeight: 0,
+        	controlArrows: true,
+            verticalCentered: true,
+            resize : false,
 
 			//Accessibility
 			keyboardScrolling: true,
@@ -99,13 +86,37 @@
  
 			//Custom selectors
 			sectionSelector: '.section',
-			//slideSelector: '.slide',
+			slideSelector: '.slide',
+			
+			
+			//events
+            onLeave: function(index, nextIndex, direction){},
+            afterLoad: function(anchorLink, index){},
+            afterRender: function(){},
+            afterResize: function(){},
+            afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+            onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+   
 			
 			 menu: '#menu',
 			responsive: 700,
 			});
 		});		
 	</script>
+	
+	<!--script src="++theme++medialog.fullpagetheme/static/slider.min.js"></script>
+		<script>
+		$(function () {
+		
+		  // Slideshow 1
+		  $("#slider").responsiveSlides({
+		    maxwidth: 800,
+		    speed: 800
+		  });
+		
+		});
+
+	</script--> 	
 	
 
 </html>

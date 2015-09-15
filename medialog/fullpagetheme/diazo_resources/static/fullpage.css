@@ -1,24 +1,19 @@
-/* @override 
-	http://localhost:8080/okologisk/++theme++medialog.fullpagetheme/++theme++medialog.fullpagetheme/static/fullpage.css
-	http://localhost:8080/++theme++medialog.fullpagetheme/static/fullpage.css
-*/
-
-/* Stylesheet for the 'ICustomTheme' Plone browser layer */
-
 div.fp-tableCell {
 	text-align: center;
+
+
 /* 	font-size: 130%; */
 	padding-top: 10%;
 	padding-left: 0;
-	padding-right:0;
+	padding-right: 0;
 	overflow: scroll;
 }
 
 #mainnav {
- 	text-align: center;
+	text-align: center;
 	background: transparent;
 	position: absolute;
-	bottom:  0;
+	bottom: 0;
 	right: 0;
 	left: 0;
 }
@@ -31,8 +26,8 @@ body #portal-globalnav {
 #menu {
 	position: absolute;
 	top: 0;
-	z-index:9;
-	text-align:center;
+	z-index: 9;
+	text-align: center;
 	width: 100%;
 	margin-top: 0;
 	padding: 1.6em 2em 1.2em;
@@ -40,16 +35,18 @@ body #portal-globalnav {
 	list-style-type: none;
 	background: black;
 }
-#menu #portal-logo{
+
+#menu #portal-logo {
 	margin-right: 2em;
 	margin-top: 0;
-	}
-	
-.fp-viewing-0  #menu {
-  background: #FFF;
 }
+
+.fp-viewing-0  #menu {
+	background: #FFF;
+}
+
 .fp-viewing-0  #menu li a {
- 	color:  #444;
+	color: #444;
 }
 
 body[class*="fp-viewing"]  #viewlet-above-content {
@@ -61,7 +58,6 @@ body[class*="fp-viewing-0"]  #viewlet-above-content {
 }
 
 #menu li {
-	 
 	list-style-image: none;
 	margin-left: 1.5em;
 	padding-bottom: 3px;
@@ -70,7 +66,7 @@ body[class*="fp-viewing-0"]  #viewlet-above-content {
 }
 
 #menu li a {
-	color: white; 
+	color: white;
 }
 
 #menu li:hover  a {
@@ -78,7 +74,7 @@ body[class*="fp-viewing-0"]  #viewlet-above-content {
 }
 
 #menu li.active,
-#menu li:hover   {
+#menu li:hover {
 	border-bottom: 2px solid white;
 }
 
@@ -86,8 +82,8 @@ hr {
 	clear: both;
 }
 
- .fp-viewing-0  #menu a {
-	color:  #CCC;
+.fp-viewing-0  #menu a {
+	color: #CCC;
 }
 
 #portal-globalnav {
@@ -95,8 +91,6 @@ hr {
 	z-index: 9;
 	padding-bottom: 0;
 }
-
-
 
 .fp-tableCell .visualIEFloatFix {
 	background: white;
@@ -106,12 +100,10 @@ hr {
 	padding: 1em;
 	min-height: 15%;
 	border-radius: 0.5em;
-	
- -webkit-transition: 500ms;
-  -moz-transition: 500ms;
-  -o-transition: 500ms;
-  transition: 500ms;
- 	
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	-o-transition: 500ms;
+	transition: 500ms;
 }
 
 a.summary.url {
@@ -132,107 +124,50 @@ p {
 	line-height: 150%;
 }
 
-  p.more  {
+p.more {
 	font-size: 90%;
 	text-align: right;
 }
-
 
 img.newsImage {
 	display: none;
 }
 
- 
-.slidetitle  {
-	z-index: 1110;
-	position: absolute;
-	color:  white;
-	font-size: 2em;
-	width: 100%;
-	top:  13%;
-	text-align: center;
-	font-weight: bold;
-	
-}
-.slidedescription {
-	z-index: 10;
- 	color:  white;
-	font-size: 2em;
-	width: 100%;
-	text-align: center;
-	position: absolute;
-	top:  20%;;
-	
+/* Slider */
+
+.slider {
+	position: relative;
+	min-height: 100%;
 }
 
- .section {
-	background-size: cover;
-}
-
-div#slides.section .fp-tableCell .visualIEFloatFix {
-	max-width: 100%;
-	margin: 0;
-	padding: 0;
-	min-height: 100%; 	
-	
-}
-
-#slides   h2.headline,
- {
-	display: none !important;
-	visibility: hidden;
-}
- 
-#slider .textbox {
-	width: 100%;
-	position: fixed;
-	display: block;
-	top:  30%;
-	z-index: 99999;
- 	text-align: center;
-	color: white;
-	font: 150% Georgia, "Times New Roman", Times, serif;
-}
-
- body #slider h1 {
-	color: white;
-	font-size: 237% !important;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
- 
-
-div#slides ul,
-div#slides  li,
-div#slides  img {
-	margin: 0;
-	padding: 0;
-	list-style-image: none;
+#main-slider li {
+	position: relative;
 	list-style-type: none;
-	width: 100%;
-	min-width: 100%;
- 
+	list-style-image: none;
+	min-height: 100%;
 }
 
-
+.slide {
+	background-position: center center;
+	
+}
 
 @media (max-width: 768px) {
-            .container { margin:0 10px;}
-            h1{ font-size: 26px !important;	}
- 
-        }
-        
-@media  (min-width: 769px)  {
-            h1{ font-size: 34px !important;	}
- 
-        }
 
-#slider {
-	position: absolute;
-	top:  0;;
+.container {
+	margin: 0 10px;
 }
- 
- 
 
- 
+h1 {
+	font-size: 26px !important;
+}
+
+}
+
+@media  (min-width: 769px) {
+
+h1 {
+	font-size: 34px !important;
+}
+
+}
