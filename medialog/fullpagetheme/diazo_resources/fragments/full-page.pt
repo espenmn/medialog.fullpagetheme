@@ -2,9 +2,9 @@
      tal:define="slider_is exists:context/slider">
  
 		<ul id="menu">
-    		<li class="btn">
-    		<a id="portal-logo"   
-    			tal:define="url context/portal_url"
+    		<li id="portal-logo"
+    		    data-menuanchor="logo">
+    		<a  tal:define="url context/portal_url"
     		    title="Home"
     			href="/"
    				i18n:domain="plone"
@@ -12,7 +12,9 @@
     			<img src="logo.png" alt="" title="home"   />
     		</a>
    			</li>	
-   			<li class="btn"  tal:condition="slider_is">
+   			<li class="btn"  
+   			    tal:condition="slider_is"
+   			    data-menuanchor="main-slider">
     		    <a  href="#">Top</a>
    			</li>	
    			
@@ -33,7 +35,9 @@
         </ul>    
         
         
-        <section id="main-slider" class="no-margin section"
+        <section id="main-slider" 
+                 class="no-margin section"
+                 data-anchor="main-slider"
                  tal:condition="slider_is" >
 
             <div  tal:repeat="item  context/slider/@@folderListing" class="slide"> 
@@ -41,8 +45,7 @@
                             image_url python:item_url + '/@@images/image' ;
                             style python: 'background-image:url(' + image_url + ')'" 
                             class="slide-box"
-                            tal:attributes="style style;
-                            data-anchor item/id">
+                            tal:attributes="style style">
                     <h1 class="animation animated-item-1" tal:content="item/Title" />
                     <h2 class="animation animated-item-2" tal:content="item/Description" />
                 </div>
@@ -58,6 +61,7 @@
                      url realobject/absolute_url;
                      logo python:'background-image:url(' + str(url) + '/@@images/image)';"
                      tal:attributes="id item/id;
+                     data-anchor item/id;
                      style logo">
                 <div tal:replace="structure realobject/folder_full_view_item" />
             </section>    
