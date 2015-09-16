@@ -7,7 +7,7 @@
     i18n:domain="plone">
 <body>
 
-<metal:content-core fill-slot="content-core">
+<metal:content-core fill-slot="content-core"  tal:define="slider_is exists:context/slider">
 <metal:block define-macro="content-core">
   <metal:listing use-macro="context/@@listing_view/macros/content-core">
     <!-- we don't want the dl -->
@@ -24,6 +24,9 @@
     			<img src="logo.png" alt="" title="home" 
     			tal:attributes="src logo_url" /></a>
    			</li>	
+   			<li class="btn"  tal:condition="slider_is">
+    		    <a  href="#">Top</a>
+   			</li>	
   			<tal:loop tal:repeat="item batch">
     			<li class="btn" 
     				tal:define="dokument  item/getId" 
@@ -36,7 +39,25 @@
     					tal:content="item/Title" />
     			</li>	 
     		</tal:loop>
-   		</ul>      		
+   		</ul>    
+   		
+          
+        			    
+        <section id="main-slider" class="no-margin section" tal:condition="slider_is" >
+
+            <div  tal:repeat="item  context/slider/@@folderListing" class="slide"> 
+                <div tal:define="item_url item/getURL|item/absolute_url;
+                            image_url python:item_url + '/@@images/image' ;
+                            style python: 'background-image:url(' + image_url + ')'" 
+                            class="slide-box"
+                            tal:attributes="style style;
+                            data-anchor item/id">
+                    <h1 class="animation animated-item-1" tal:content="item/Title" />
+                    <h2 class="animation animated-item-2" tal:content="item/Description" />
+                </div>
+            </div>
+         </section><!--/#main-slider-->
+ 
     <metal:block use-macro="context/@@listing_view/macros/entries">
         <metal:entry fill-slot="entry">
 		<div class="section" 
@@ -51,6 +72,9 @@
              	tal:replace="structure realobject/folder_full_view_item" />
 		</div>
         </metal:entry>
+
+
+        
       </metal:block>
     </metal:entries>
   </metal:listing>

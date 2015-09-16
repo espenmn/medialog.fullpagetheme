@@ -1,5 +1,5 @@
 <div id="fullpage"                      
-     tal:define="slider_is nocall:context/slider|nothing">
+     tal:define="slider_is exists:context/slider">
  
 		<ul id="menu">
     		<li class="btn">
