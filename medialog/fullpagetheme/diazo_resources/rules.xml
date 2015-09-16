@@ -39,7 +39,7 @@
         <theme href="++theme++medialog.fullpagetheme/fullpage.html" />
 
  	      <replace	css:theme-children="#content-core"     
- 	      		   	css:content="#content-core"
+ 	      		   	css:content-children="#content-core"
  	      			href="@@theme-fragment/full-page" />  
  
     </rules>

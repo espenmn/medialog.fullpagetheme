@@ -24,7 +24,9 @@
     			<img src="logo.png" alt="" title="home" 
     			tal:attributes="src logo_url" /></a>
    			</li>	
-   			<li class="btn"  tal:condition="slider_is">
+   			<li class="btn"  
+   			    data-menuanchor="main-slider"
+   			    tal:condition="slider_is">
     		    <a  href="#main-slider">Top</a>
    			</li>	
   			<tal:loop tal:repeat="item batch">
@@ -43,15 +45,16 @@
    		
           
         			    
-        <section id="main-slider" class="no-margin section" tal:condition="slider_is" >
+        <section class="no-margin section" 
+                data-anchor="main-slider"
+                tal:condition="slider_is" >
 
             <div  tal:repeat="item  context/slider/@@folderListing" class="slide"> 
                 <div tal:define="item_url item/getURL|item/absolute_url;
                             image_url python:item_url + '/@@images/image' ;
                             style python: 'background-image:url(' + image_url + ')'" 
                             class="slide-box"
-                            tal:attributes="style style;
-                            data-anchor item/id">
+                            tal:attributes="style style">
                     <h1 class="animation animated-item-1" tal:content="item/Title" />
                     <h2 class="animation animated-item-2" tal:content="item/Description" />
                 </div>
@@ -65,7 +68,6 @@
 			 url realobject/absolute_url;
 			 logo python:'background-image:url(' + str(url) + '/@@images/image)'"
 			 tal:attributes="data-anchor item/id; 
-			 id item/id;
 			 style logo"
 			 tal:condition="not:item/exclude_from_nav" >
         	<div tal:define="realobject python:item.getObject()"
