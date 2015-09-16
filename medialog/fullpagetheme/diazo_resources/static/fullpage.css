@@ -162,14 +162,7 @@ div.slide-box{
 	display: block;
 }
 
-/**
- * fullPage 2.6.6
- * https://github.com/alvarotrigo/fullPage.js
- * MIT licensed
- *
- * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
- * Contribution by Jhony0311
- */
+
 html.fp-enabled,
 .fp-enabled body {
     margin: 0;
@@ -237,20 +230,21 @@ html.fp-enabled,
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
+}
 
-    &.fp-prev {
+.fp-controlArrow.fp-prev {
         left: 15px;
         width: 0;
         border-width: 38.5px 34px 38.5px 0;
         border-color: transparent #fff transparent transparent;
     }
 
-    &.fp-next {
+.fp-controlArrow.fp-next {
         right: 15px;
         border-width: 38.5px 0 38.5px 34px;
         border-color: transparent transparent transparent #fff;
     }
-}
+
 .fp-scrollable {
     overflow: scroll;
 }
@@ -263,12 +257,12 @@ html.fp-enabled,
     z-index: 4;
     left: 50%;
     opacity: 1;
-
-    &.bottom {
+}
+.fp-slidesNav.bottom {
         bottom: 17px;
     }
 
-    &.top {
+.fp-slidesNav.top {
         top: 17px;
     }
 }
@@ -277,15 +271,17 @@ html.fp-enabled,
 .fp-slidesNav ul {
     margin: 0;
     padding: 0;
+}
 
-    li {
+.fp-slidesNav ul li {
         display: block;
         width: 14px;
         height: 13px;
         margin: 7px;
         position:relative;
+}
 
-        a {
+.fp-slidesNav ul li a {
             display: block;
             position: relative;
             z-index: 1;
@@ -294,21 +290,22 @@ html.fp-enabled,
             cursor: pointer;
             text-decoration: none;
 
-            &.active span {
+.fp-slidesNav ul li a.active span {
                 height: 12px;
                 width: 12px;
                 margin: -6px 0 0 -6px;
                 border-radius: 100%;
+}
 
-                #fp-nav ul li:hover &,
-                #fp-slidesNav ul li:hover & {
+#fp-nav ul li:hover ,
+#fp-slidesNav ul li:hover  {
                     height: 12px;
                     width: 12px;
                     margin: -6px 0 0 -6px;
                     border-radius: 100%;
+          
                 }
-            }
-
+#fp-nav ul
             span {
                 border-radius: 50%;
                 position: absolute;
@@ -327,18 +324,11 @@ html.fp-enabled,
             }
         }
 
-        &:hover {
-
-            a {
-                span {
+#fp-nav ul:hover a span {
                     width: 10px;
                     height: 10px;
                     margin: -5px 0px 0px -5px;
-                }
-            }
-        }
-
-    }
+ 
 }
 #fp-nav {
     position: fixed;
@@ -347,15 +337,17 @@ html.fp-enabled,
     top: 50%;
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
-    &.right {
+}
+
+#fp-nav.right {
        right: 17px; 
     }
-    &.left {
+
+#fp-nav.left {
         left: 17px
     }
-    ul {
-        li {
-            .fp-tooltip {
+    
+#fp-nav ul    li   .fp-tooltip {
                 position: absolute;
                 top: -2px;
                 color: #fff;
@@ -367,26 +359,18 @@ html.fp-enabled,
                 display: block;
                 opacity: 0;
                 width: 0;
-
-                &.right {
-                    right: 20px;
                 }
 
-                &.left {
-
-                }
-            }
-            &:hover {
+#fp-nav ul    li   .fp-tooltip:hover {
                 .fp-tooltip {
                     -webkit-transition: opacity 0.2s ease-in;
                     transition: opacity 0.2s ease-in;
                     width: auto;
                     opacity: 1;
                 }
-            }
-        }
-    }
-    &.fp-show-active a.active + .fp-tooltip {
+ 
+ 
+#fp-nav ul    li   .fp-toolti.fp-show-active a.active + .fp-tooltip {
         -webkit-transition: opacity 0.2s ease-in;
         transition: opacity 0.2s ease-in;
         width: auto;
