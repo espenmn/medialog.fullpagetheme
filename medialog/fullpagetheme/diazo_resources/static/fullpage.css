@@ -123,17 +123,17 @@ a.summary.url {
 div.description {
 	font-weight: bold;
 	padding: 0 1em 1em;
-	font-size: 110%;
+	font-size: 130%;
 	color: #666;
 }
 
 p {
-	font-size: 110%;
+	font-size: 120%;
 	line-height: 150%;
 }
 
 p.more {
-	font-size: 90%;
+	font-size: 95%;
 	text-align: right;
 }
 

@@ -25,7 +25,7 @@
     			tal:attributes="src logo_url" /></a>
    			</li>	
    			<li class="btn"  tal:condition="slider_is">
-    		    <a  href="#">Top</a>
+    		    <a  href="#main-slider">Top</a>
    			</li>	
   			<tal:loop tal:repeat="item batch">
     			<li class="btn" 
