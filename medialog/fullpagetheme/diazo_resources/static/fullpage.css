@@ -7,7 +7,7 @@
 div.fp-tableCell {
 	text-align: center;
 /* 	font-size: 130%; */
-
+	background-size:cover;
 	padding:0;
 }
 
@@ -207,6 +207,7 @@ html, body {
     -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
     -moz-box-sizing: border-box; /* <=28 */
     box-sizing: border-box;
+    background-size: cover;
 }
 .fp-slide {
     float: left;
