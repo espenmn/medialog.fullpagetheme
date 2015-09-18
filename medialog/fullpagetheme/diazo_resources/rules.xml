@@ -23,12 +23,12 @@
     </rules>
     
     <!-- Apply the following rules to all-content view -->
-    <rules css:if-content=".template-full_view">
+    <rules css:if-content=".template-full_view.userrole-anonymous">
 
         <theme href="++theme++medialog.fullpagetheme/fullpage.html" />
         <replace css:content="#content-core" css:theme="#content-core" />
-         <!-- replace css:content="#portal-globalnav" css:theme="#portal-globalnav" /-->
- 		<drop css:content="#portal-breadcrumbs" />
+         <replace css:content="#portal-globalnav" css:theme="#portal-globalnav" />
+ 		<!--drop css:content="#portal-breadcrumbs" /-->
  		<!-- drop css:theme="#viewlet-above-content" / -->
  
     </rules>

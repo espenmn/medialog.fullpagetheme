@@ -7,6 +7,7 @@ div.fp-tableCell {
 /* 	font-size: 130%; */
 
 	padding:0;
+	background-size:cover;
 }
 
 div.slide-box {
@@ -23,12 +24,12 @@ div.slide-box {
 	left: 0;
 }
 
-body #portal-globalnav {
+body .fullpage-wrapper  #portal-globalnav {
 	display: inline;
 	position: relative;
 }
 
-#menu {
+.fullpage-wrapper #portal-globalnav {
 	position: absolute;
 	top: 0;
 	z-index: 9;
@@ -41,16 +42,16 @@ body #portal-globalnav {
 	background: black;
 }
 
-#menu #portal-logo {
+.fullpage-wrapper #portal-globalnav  #portal-logo {
 	margin-right: 2em;
 	margin-top: 0;
 }
 
-.fp-viewing-0  #menu {
+.fp-viewing-0 .fullpage-wrapper  #portal-globalnav  {
 	background: #FFF;
 }
 
-.fp-viewing-0  #menu li a {
+.fp-viewing-0  .fullpage-wrapper  #portal-globalnav  li a {
 	color: #444;
 }
 
@@ -62,7 +63,7 @@ body[class*="fp-viewing-0"]  #viewlet-above-content {
 	display: block;
 }
 
-#menu li {
+##portal-globalnav .fullpage-wrapper  li {
 	list-style-image: none;
 	margin-left: 1.5em;
 	padding-bottom: 3px;
@@ -70,19 +71,19 @@ body[class*="fp-viewing-0"]  #viewlet-above-content {
 	display: inline-block;
 }
 
-#menu li a {
+##portal-globalnav .fullpage-wrapper  li a {
 	color: white;
 }
 
-#menu li:hover  a {
+##portal-globalnav  .fullpage-wrapper  li:hover  a {
 	text-decoration: none;
 }
 
-#menu li.active,
-#menu li:hover {
+##portal-globalnav .fullpage-wrapper  li.active,
+##portal-globalnav .fullpage-wrapper  li:hover {
 	border-bottom: 2px solid white;
 }
-#menu li#portal-logo:hover {
+##portal-globalnav .fullpage-wrapper  li#portal-logo:hover {
 	border:  0 none;
 }
 
@@ -90,11 +91,11 @@ hr {
 	clear: both;
 }
 
-.fp-viewing-0  #menu a {
+.fp-viewing-0  .fullpage-wrapper  #portal-globalnav  a {
 	color: #CCC;
 }
 
-#portal-globalnav {
+.fullpage-wrapper #portal-globalnav {
 	position: fixed;
 	z-index: 9;
 	padding-bottom: 0;
@@ -162,6 +163,7 @@ html, body {
     -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
     -moz-box-sizing: border-box; /* <=28 */
     box-sizing: border-box;
+    background-size:cover;
 }
 .fp-slide {
     float: left;

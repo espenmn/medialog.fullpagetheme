@@ -1,7 +1,25 @@
 <div id="content-core"                      
      tal:define="slider_is exists:context/slider">
+     
+     
  
-		<ul id="menu">
+
+  <p class="hiddenStructure" i18n:translate="heading_sections">Navigation</p>
+  <nav class="plone-navbar" id="portal-globalnav-wrapper" role="navigation">
+    <div class="container">
+      <div class="plone-navbar-header">
+        <button type="button" class="plone-navbar-toggle" data-toggle="collapse" data-target="#portal-globalnav-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="plone-collapse plone-navbar-collapse" id="portal-globalnav-collapse">
+        <ul class="xplone-nav xplone-navbar-nav"
+            id="portal-globalnav">
+ 
     		<li id="portal-logo">
     		<a  tal:define="url context/portal_url"
     		    title="Home"
@@ -31,7 +49,17 @@
     					tal:content="item/Title" />
     			</li>	 
     		</tal:loop>
-        </ul>    
+            
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ 
+     
+     
+ 
+
         
         
         <section class="no-margin section"
