@@ -1,13 +1,14 @@
-/* @override http://localhost:8080/fpage/++theme++medialog.fullpagetheme/static/fullpage.css */
-
-/* @override http://localhost:8080/honning/++theme++medialog.fullpagetheme/static/fullpage.css */
+/* @override 
+	http://localhost:8080/fpage/++theme++medialog.fullpagetheme/static/fullpage.css
+	http://localhost:8080/honning/++theme++medialog.fullpagetheme/static/fullpage.css
+	http://localhost:8080/honning/fullpage/++theme++medialog.fullpagetheme/static/fullpage.css
+*/
 
 div.fp-tableCell {
 	text-align: center;
 /* 	font-size: 130%; */
 
 	padding:0;
-	background-size:cover;
 }
 
 div.slide-box {
@@ -24,34 +25,56 @@ div.slide-box {
 	left: 0;
 }
 
-body .fullpage-wrapper  #portal-globalnav {
-	display: inline;
-	position: relative;
-}
-
-.fullpage-wrapper #portal-globalnav {
+.plone-navbar-header {
+	background: black;
+	height:  3em;;
 	position: absolute;
 	top: 0;
+	left:  0;
+	right:  0;;
+}
+
+button.plone-navbar-toggle {
+
+line-height: 1em;
+background: whitesmoke;	
+margin-right: 1em;
+font-size: 1.2em;
+}
+
+
+
+#menu {
+	position: absolute;
+	top: 0;
+	left: 0;
 	z-index: 9;
 	text-align: center;
 	width: 100%;
-	margin-top: 0;
+	margin: 0;
 	padding: 1.6em 2em 1.2em;
 	list-style-image: none;
 	list-style-type: none;
 	background: black;
+	line-height: 2em;
 }
 
-.fullpage-wrapper #portal-globalnav  #portal-logo {
+#menu #portal-logo {
 	margin-right: 2em;
 	margin-top: 0;
 }
 
-.fp-viewing-0 .fullpage-wrapper  #portal-globalnav  {
+
+#menu #portal-logo {
+	margin-right: 2em;
+	margin-top: 0;
+}
+
+.fp-viewing-0  #menu {
 	background: #FFF;
 }
 
-.fp-viewing-0  .fullpage-wrapper  #portal-globalnav  li a {
+.fp-viewing-0  #menu li a {
 	color: #444;
 }
 
@@ -63,7 +86,7 @@ body[class*="fp-viewing-0"]  #viewlet-above-content {
 	display: block;
 }
 
-##portal-globalnav .fullpage-wrapper  li {
+#menu li {
 	list-style-image: none;
 	margin-left: 1.5em;
 	padding-bottom: 3px;
@@ -71,19 +94,22 @@ body[class*="fp-viewing-0"]  #viewlet-above-content {
 	display: inline-block;
 }
 
-##portal-globalnav .fullpage-wrapper  li a {
+#menu li a {
 	color: white;
 }
 
-##portal-globalnav  .fullpage-wrapper  li:hover  a {
+#menu li:hover  a {
 	text-decoration: none;
+		background: none !important;
+
 }
 
-##portal-globalnav .fullpage-wrapper  li.active,
-##portal-globalnav .fullpage-wrapper  li:hover {
+#menu li.active,
+#menu li:hover {
 	border-bottom: 2px solid white;
+	background: none !important;
 }
-##portal-globalnav .fullpage-wrapper  li#portal-logo:hover {
+#menu li#portal-logo:hover {
 	border:  0 none;
 }
 
@@ -91,11 +117,11 @@ hr {
 	clear: both;
 }
 
-.fp-viewing-0  .fullpage-wrapper  #portal-globalnav  a {
+.fp-viewing-0  #menu a {
 	color: #CCC;
 }
 
-.fullpage-wrapper #portal-globalnav {
+#portal-globalnav {
 	position: fixed;
 	z-index: 9;
 	padding-bottom: 0;
@@ -163,7 +189,6 @@ html, body {
     -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
     -moz-box-sizing: border-box; /* <=28 */
     box-sizing: border-box;
-    background-size:cover;
 }
 .fp-slide {
     float: left;
