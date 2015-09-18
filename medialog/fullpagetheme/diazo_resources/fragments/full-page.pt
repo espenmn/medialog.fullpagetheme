@@ -23,7 +23,7 @@
     			<img src="logo.png" alt="" title="home"   />
     		</a>
    			</li>	
-   			<li class="btn"  
+   			<li class="btn active"  
    			    tal:condition="slider_is"
    			    data-menuanchor="main-slider">
     		    <a  href="#main-slider">Top</a>

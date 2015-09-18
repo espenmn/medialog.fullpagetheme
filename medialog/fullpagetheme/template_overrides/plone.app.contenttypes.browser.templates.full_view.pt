@@ -34,7 +34,7 @@
 					<img src="logo.png" alt="" title="home" 
 					tal:attributes="src logo_url" /></a>
 				</li>	
-				<li class="btn"  
+				<li class="btn active"  
 					data-menuanchor="main-slider"
 					tal:condition="slider_is">
 					<a  href="#main-slider">Top</a>

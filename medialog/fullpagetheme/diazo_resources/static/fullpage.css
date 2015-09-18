@@ -76,7 +76,7 @@ button.plone-navbar-toggle:hover {
 	list-style-image: none;
 	list-style-type: none;
 	background: black;
-	line-height: 2.6em;
+	line-height: 2em;
 }
 
 
@@ -106,7 +106,7 @@ body[class*="fp-viewing-0"]  #viewlet-above-content {
 #menu li {
 	list-style-image: none;
 	margin-left: 1.5em;
-	padding-bottom: 3px;
+	padding-bottom: 0px;
 	list-style-type: none;
 	display: inline-block;
 }
