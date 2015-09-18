@@ -67,8 +67,10 @@
                             class="slide-box"
                             tal:attributes="style style;
                             data-anchor item/id">
-                    <h1 class="animation animated-item-1" tal:content="item/Title" />
-                    <h2 class="animation animated-item-2" tal:content="item/Description" />
+                    <div class="slidertext animation animated-item-1">
+                    	<h1  tal:content="item/Title" />
+                    	<h2 tal:content="item/Description" />
+                    </div>
                 </div>
             </div>
         </section><!--/#main-slider-->

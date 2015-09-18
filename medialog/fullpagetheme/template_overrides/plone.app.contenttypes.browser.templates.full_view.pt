@@ -12,38 +12,50 @@
   <metal:listing use-macro="context/@@listing_view/macros/content-core">
     <!-- we don't want the dl -->
     <metal:entries fill-slot="entries">
-    	<ul id="menu">
-    		<li class="btn">
-    		<a id="portal-logo"    
-    			title="Home"
-    			tal:define="site_url view/navigation_root_url;
-    			logo_url python:site_url + '/logo.png'"
-   				tal:attributes="href view/navigation_root_url"
-   				i18n:domain="plone"
-   				i18n:attributes="title">
-    			<img src="logo.png" alt="" title="home" 
-    			tal:attributes="src logo_url" /></a>
-   			</li>	
-   			<li class="btn"  
-   			    data-menuanchor="main-slider"
-   			    tal:condition="slider_is">
-    		    <a  href="#main-slider">Top</a>
-   			</li>	
-  			<tal:loop tal:repeat="item batch">
-    			<li class="btn" 
-    				tal:define="dokument  item/getId" 
-    				tal:attributes="data-menuanchor dokument"
-    				tal:condition="not:item/exclude_from_nav" >
-    				<a  href="" 
-    					tal:define="link python:'#' + dokument"
-    					tal:attributes="href link;  
-    					data-menuanchor item/getId"
-    					tal:content="item/Title" />
-    			</li>	 
-    		</tal:loop>
-   		</ul>    
-   		
-          
+    	<nav class="fixed" role="navigation">
+ 
+		  <div class="plone-navbar-header">
+			<button type="button" class="plone-navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
+			  <span>Menu</span>
+			</button>
+		  </div>
+
+		  <div class="plone-collapse plone-navbar-collapse" id="menu-collapse">
+			<ul id="menu" >
+  
+				<li class="btn">
+				<a id="portal-logo"    
+					title="Home"
+					tal:define="site_url view/navigation_root_url;
+					logo_url python:site_url + '/logo.png'"
+					tal:attributes="href view/navigation_root_url"
+					i18n:domain="plone"
+					i18n:attributes="title">
+					<img src="logo.png" alt="" title="home" 
+					tal:attributes="src logo_url" /></a>
+				</li>	
+				<li class="btn"  
+					data-menuanchor="main-slider"
+					tal:condition="slider_is">
+					<a  href="#main-slider">Top</a>
+				</li>	
+				<tal:loop tal:repeat="item batch">
+					<li class="btn" 
+						tal:define="dokument  item/getId" 
+						tal:attributes="data-menuanchor dokument"
+						tal:condition="not:item/exclude_from_nav" >
+						<a  href="" 
+							tal:define="link python:'#' + dokument"
+							tal:attributes="href link;  
+							data-menuanchor item/getId"
+							tal:content="item/Title" />
+					</li>	 
+				</tal:loop>
+			</ul>    
+		  </div>
+ 
+	    </nav>
+		  
         			    
         <section class="no-margin section" 
                 data-anchor="main-slider"
@@ -55,8 +67,10 @@
                             style python: 'background-image:url(' + image_url + ')'" 
                             class="slide-box"
                             tal:attributes="style style">
-                    <h1 class="animation animated-item-1" tal:content="item/Title" />
-                    <h2 class="animation animated-item-2" tal:content="item/Description" />
+                    <div class="slidertext">
+                    	<h1  tal:content="item/Title" />
+                    	<h2 tal:content="item/Description" />
+                    </div>
                 </div>
             </div>
          </section><!--/#main-slider-->

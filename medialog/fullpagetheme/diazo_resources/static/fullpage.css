@@ -15,7 +15,23 @@ div.slide-box {
 	height: 100%;;
 	width: 100%;
 	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
 }
+
+ 
+
+.slidertext {
+
+	padding-left: 3em;
+	padding-right: 3em;
+	position: relative;
+	top: 35%;
+ width: 40%; 
+ 
+}
+
+
 #mainnav {
 	text-align: center;
 	background: transparent;
@@ -35,11 +51,15 @@ div.slide-box {
 }
 
 button.plone-navbar-toggle {
-
-line-height: 1em;
-background: whitesmoke;	
-margin-right: 1em;
+	line-height: 1em;	
+	background: whitesmoke;	
+	margin-right: 1em;
 font-size: 1.2em;
+	}
+
+
+button.plone-navbar-toggle:hover {
+	background: white;
 }
 
 
@@ -52,17 +72,14 @@ font-size: 1.2em;
 	text-align: center;
 	width: 100%;
 	margin: 0;
-	padding: 1.6em 2em 1.2em;
+	padding: 1em 2em 0.5em;
 	list-style-image: none;
 	list-style-type: none;
 	background: black;
-	line-height: 2em;
+	line-height: 2.6em;
 }
 
-#menu #portal-logo {
-	margin-right: 2em;
-	margin-top: 0;
-}
+
 
 
 #menu #portal-logo {
@@ -127,6 +144,7 @@ hr {
 	padding-bottom: 0;
 }
 
+.slidertext,
 .fp-tableCell .visualIEFloatFix {
 	background: white;
 	opacity: 0.8;
@@ -193,6 +211,9 @@ html, body {
 .fp-slide {
     float: left;
 }
+
+
+
 .fp-slide, .fp-slidesContainer {
     height: 100%;
     display: block;
