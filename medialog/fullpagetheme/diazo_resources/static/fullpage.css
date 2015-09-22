@@ -28,8 +28,7 @@ div.slide-box {
 	padding-right: 3em;
 	position: relative;
 	top: 35%;
- width: 40%; 
- min-width: 400px;
+	 min-width: 450px;
  
 }
 
@@ -151,7 +150,7 @@ hr {
 .fp-tableCell .visualIEFloatFix {
 	background: white;
 	opacity: 0.8;
-	max-width: 60%;
+	max-width: 900px;
 	min-width: 450px;
 	margin: auto;
 	padding: 1em;
