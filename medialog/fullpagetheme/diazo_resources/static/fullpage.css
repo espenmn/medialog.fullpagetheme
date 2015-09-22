@@ -186,7 +186,30 @@ img.newsImage {
 	display: none;
 }
 
- 
+
+
+input.int-field {
+	float: left;
+	width: 3em;
+	margin-left: 1em;
+}
+
+label.horizontal {
+	float: left;
+	min-width: 380px;
+	clear: both;
+	line-height: 2.6
+	em;
+}
+
+
+
+label.horizontal {
+	float: left;
+	min-width: 380px;
+	clear: both;
+	line-height: 2.6em;
+}
 
 html, body {
     /*Avoid flicker on slides transitions for mobile phones #336 */
