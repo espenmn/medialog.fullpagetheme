@@ -54,14 +54,7 @@
  
   </nav>
 
- 
-     
-     
- 
-
-        
-        
-        <section class="no-margin section"
+      <section class="no-margin section"
                  data-anchor="main-slider"
                  tal:condition="slider_is" >
 
