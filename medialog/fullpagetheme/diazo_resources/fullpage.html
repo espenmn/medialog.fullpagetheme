@@ -55,6 +55,8 @@
  	<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
 	<!--script type="text/javascript" src="++theme++medialog.fullpagetheme/static/jquery.slimscroll.min.js"></script -->
 
+	<script type="text/javascript" src="++theme++medialog.fullpagetheme/static/jquery.fullPage.js">
+	</script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#content-core').fullpage({
@@ -72,8 +74,6 @@
 			slidesNavigation: true,
             slidesNavPosition: 'bottom',
             loopHorizontal: true,
-            //scrollOverflow: true,
-            normalScrollElements: '#products, .product-boxes',
 			
 			//Design
 			paddingTop: '2em',
@@ -83,8 +83,7 @@
         	responsiveHeight: 0,
         	controlArrows: true,
             verticalCentered: true,
-            resize : true,
-
+            resize : false,
 			//Accessibility
 			keyboardScrolling: true,
 			animateAnchor: true,
