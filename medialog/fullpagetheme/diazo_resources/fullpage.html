@@ -62,7 +62,7 @@
 			css3: true,
 			scrollingSpeed: 700,
 			autoScrolling: true,
-			fitToSection: false,
+			fitToSection: true,
 			fitToSectionDelay: 1000,
 			scrollBar: false,
 			easing: 'easeInOutCubic',
@@ -73,7 +73,7 @@
             slidesNavPosition: 'bottom',
             loopHorizontal: true,
             //scrollOverflow: true,
-            normalScrollElements: '.product-boxes',
+            //normalScrollElements: '.my-map',
 			
 			//Design
 			paddingTop: '2em',
@@ -97,6 +97,7 @@
 			 menu: '#menu',
 			responsive: 700,
 			});
+			$('.section .active').css('overflow-y','auto');
 		});		
 	</script>
 	
