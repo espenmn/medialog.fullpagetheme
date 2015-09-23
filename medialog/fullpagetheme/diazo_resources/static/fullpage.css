@@ -3,6 +3,7 @@
 	http://localhost:8080/honning/++theme++medialog.fullpagetheme/static/fullpage.css
 	http://localhost:8080/honning/fullpage/++theme++medialog.fullpagetheme/static/fullpage.css
 	http://www.okologisk-honning.no/++theme++honning/++theme++medialog.fullpagetheme/static/fullpage.css
+	http://www.okologisk-honning.no/++theme++medialog.fullpagetheme/static/fullpage.css
 */
 
 div.fp-tableCell {
@@ -232,6 +233,7 @@ html, body {
 
  
 .product-boxes {
+	margin-top:  2em:;
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
@@ -241,8 +243,8 @@ html, body {
 }
 
 .product-box {
-	  width: 500px;
-	  min-width: 400px;
+	  width: 350px;
+	  min-width: 300px;
 	  margin: 1em;
 	  padding: 1em;
 	  border-radius: 7px;
@@ -252,13 +254,14 @@ html, body {
 .product-box h1 {
 	border-bottom:  1px solid silver;
 	padding: 6px 1.2em 1em;
+	size: 1em;
 }
 .product-box h2 {
 	color:  #111;
 }
 
 .product-box p{
-	font-size: 100%
+	font-size: 90%
 }
 .fp-section {
     position: relative;
