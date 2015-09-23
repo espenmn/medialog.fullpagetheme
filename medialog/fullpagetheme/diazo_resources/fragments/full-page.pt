@@ -1,6 +1,6 @@
 <div id="content-core"                      
      tal:define="slider_is exists:context/slider;
-     honningtypar_is exists:context/products">
+     products_is exists:context/products">
      
      
 
