@@ -470,6 +470,10 @@ html, body {
     left: 20px;
 }
 
+button.plone-navbar-toggle {
+	z-index: 999;
+}
+
 
 @media  (max-width:1200px) {
 
