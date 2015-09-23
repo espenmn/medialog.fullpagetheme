@@ -87,7 +87,7 @@
             </section>    
         </tal:lopp>
         
-        <section class="no-margin section"
+        <section class="no-margin section fp-auto-height"
             data-anchor="products"
             tal:condition="products_is" >
 
