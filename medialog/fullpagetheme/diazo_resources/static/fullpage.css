@@ -1,3 +1,4 @@
+/* @override http://www.okologisk-honning.no/fullpage/++theme++medialog.fullpagetheme/static/fullpage.css */
 
 div.fp-tableCell {
 	text-align: center;
@@ -477,10 +478,18 @@ html, body {
 	  width: 44%;
  
      }
-
+	
 
 
 @media (max-width: 768px) {
+	
+	
+.slidertext,
+.visualIEFloatFix div {
+	max-width: 90%;
+ 	margin: auto;
+	padding: 0 !important;
+}
 
 .container {
 	margin: 0 10px;
@@ -500,15 +509,11 @@ h1 {
 	  width: 100%;
  
      }
-
-}
-
-@media  (min-width: 769px) {
-
-h1 {
-	font-size: 34px !important;
-}
-
-
+     
+  .xproduct-box img{
+	 float: none;
+	 margin: auto;
+ 
+     }
 
 }

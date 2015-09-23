@@ -482,7 +482,6 @@ html, body {
 
 
 
-
 @media (max-width: 768px) {
 
 .container {
@@ -503,6 +502,11 @@ h1 {
 	  width: 100%;
  
      }
+.product-box img{
+	 float: none;
+	 margin: auto;
+ 
+     }
 
 }
 @media  (max-width:1200px) {
@@ -513,12 +517,3 @@ h1 {
  
      }
 
-@media  (min-width: 769px) {
-
-h1 {
-	font-size: 34px !important;
-}
-
-
-
-}
