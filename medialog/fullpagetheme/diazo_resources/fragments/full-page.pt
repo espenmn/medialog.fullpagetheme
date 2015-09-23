@@ -91,8 +91,8 @@
             data-anchor="products"
             tal:condition="products_is" >
 
-            <div class="product-boxes slide">
-                <div tal:repeat="item  context/products/@@folderListing" class="product-box" 
+            <div class="xproduct-boxes slide">
+                <div tal:repeat="item  context/products/@@folderListing" class="xproduct-box" 
                     tal:attributes="data-anchor item/id;">
  
                     <img tal:define="item_object item/getObject;" 
