@@ -1,6 +1,5 @@
 <div id="content-core"                      
-     tal:define="slider_is exists:context/slider;
-     products_is exists:context/products">
+     tal:define="slider_is exists:context/slider">
      
      
 
@@ -28,8 +27,8 @@
    			    tal:condition="slider_is"
    			    data-menuanchor="main-slider">
     		    <a  href="#main-slider">Top</a>
-   			</li>
-
+   			</li>	
+   			
    			
   			<tal:loop	 
   			    tal:repeat="item 
@@ -44,18 +43,20 @@
     					tal:content="item/Title" />
     			</li>	 
     		</tal:loop>
-            <li class="btn"  
-   			    tal:condition="products_is"
-   			    data-menuanchor="products">
-    		    <a  href="#products"> </a>
-   			</li>
-   			
+            
         </ul>
       </div>
  
   </nav>
 
-       <section class="no-margin section"
+ 
+     
+     
+ 
+
+        
+        
+        <section class="no-margin section"
                  data-anchor="main-slider"
                  tal:condition="slider_is" >
 
@@ -74,11 +75,6 @@
             </div>
         </section><!--/#main-slider-->
 
-
-
-        
-
-
         <tal:lopp tal:repeat="item 
                 context/@@folderListing">
                 
@@ -92,30 +88,7 @@
                 <div tal:replace="structure realobject/folder_full_view_item" />
             </section>    
         </tal:lopp>
-        
-        <section class="no-margin section"
-            data-anchor="products"
-            tal:condition="products_is" >
-
-            <div class="product-boxes">
-                <div tal:repeat="item  context/products/@@folderListing" class="product-box" 
-                    tal:attributes="data-anchor item/id;">
- 
-                    <img tal:define="item_object item/getObject;" 
-                         tal:condition="exists:item_object/@@images/image"
-                      tal:replace="structure item_object/@@images/image/mini" />
-             
- 
-                     <h1  tal:content="item/Title" />
-                        <h2 tal:content="item/Description" />
-
-                         <div  tal:condition="item/text"
-                                tal:content="structure item/text/output" />
-
-                 </div>
-            </div>
-        </section>
-
-
 
 </div>
+
+ 
