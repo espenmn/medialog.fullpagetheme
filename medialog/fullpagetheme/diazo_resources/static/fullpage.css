@@ -483,11 +483,18 @@ html, body {
 
 @media (max-width: 768px) {
 	
-	
+div.visualIEFloatFix {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	max-width: 100%;
+	min-width: 90% !important;
+}
 .slidertext,
+ #parent-fieldname-text
 .visualIEFloatFix div {
-	max-width: 90%;
- 	margin: auto;
+	max-width: 90% !important;
+ 	margin: auto !important;
 	padding: 0 !important;
 }
 
@@ -499,11 +506,7 @@ h1 {
 	font-size: 26px !important;
 }
 
-.slidertext {
-
-	width: 80%;
-	padding:  5%;; 
-}
+ 
 
 .product-box {
 	  width: 100%;
@@ -515,5 +518,6 @@ h1 {
 	 margin: auto;
  
      }
+ 
 
 }
