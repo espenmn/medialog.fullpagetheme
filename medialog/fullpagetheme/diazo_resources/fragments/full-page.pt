@@ -76,7 +76,7 @@
         <tal:lopp tal:repeat="item 
                 context/@@folderListing">
                 
-            <section class="section fa" 
+            <section class="section fa fp-auto-height" 
                      tal:condition="not:item/exclude_from_nav" 
                      tal:define="realobject item/getObject;
                      url realobject/absolute_url;
