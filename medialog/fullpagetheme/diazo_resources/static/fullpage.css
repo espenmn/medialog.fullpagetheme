@@ -264,7 +264,7 @@ html, body {
 .product-box {
 	  width: 32%;
 	  max-width: 700px;
-	  margin-top: 3em;
+	  margin-top: 4em;
 	  padding: 1em 2em;
 	  border-radius: 7px;
 	  border:  1px solid silver;
@@ -502,8 +502,10 @@ h1 {
 
 }
 @media  (max-width:1200px) {
+
+ 
 .product-box {
-	  width: 47%;
+	  width: 44%;
  
      }
 
