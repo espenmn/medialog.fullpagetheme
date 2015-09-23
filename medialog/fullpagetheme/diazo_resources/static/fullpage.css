@@ -24,15 +24,31 @@ div.slide-box {
 
  
 
-.slidertext {
-
-	padding-left: 3em;
-	padding-right: 3em;
-	position: relative;
+div.slidertext {
+ 	position: relative;
 	top: 35%;
- 	width: 40%; 
+ 	background: none;
 }
 
+div.slidertext h1 {
+	 color:  white;
+	 font-size: 3.3em !important ;
+	 font-family: times;
+	text-shadow: black 3px 3px 6px;
+	margin: 0;
+ 
+
+	 
+}
+
+div.slidertext h2 {
+	 color:  white;
+	 font-size: 2em !important ;
+	 font-family: times;
+	text-shadow: black 3px 3px 6px;
+	margin-top: 3px;
+ 
+}
 
 
 #mainnav {
@@ -151,10 +167,10 @@ hr {
 .fp-tableCell .visualIEFloatFix {
 	background: white;
 	opacity: 0.8;
-	max-width: 60%;
+	max-width: 550px;
 	min-width: 450px;
 	margin: auto;
-	padding: 1em;
+	padding: 1em 2em 3em;
 	min-height: 15%;
 	border-radius: 0.5em;
 	-webkit-transition: 500ms;
