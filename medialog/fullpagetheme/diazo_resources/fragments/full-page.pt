@@ -91,7 +91,7 @@
             data-anchor="products"
             tal:condition="products_is" >
 
-            <div class="product-boxes fp-auto-height">
+            <div class="product-boxes">
                 <div tal:repeat="item  context/products/@@folderListing" class="product-box" 
                     tal:attributes="data-anchor item/id;">
  
