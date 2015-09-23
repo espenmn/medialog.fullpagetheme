@@ -1,0 +1,523 @@
+/* @override http://www.okologisk-honning.no/++theme++medialog.fullpagetheme/static/fullpage.css */
+
+/* @override 
+	http://localhost:8080/fpage/++theme++medialog.fullpagetheme/static/fullpage.css
+	http://localhost:8080/honning/++theme++medialog.fullpagetheme/static/fullpage.css
+	http://localhost:8080/honning/fullpage/++theme++medialog.fullpagetheme/static/fullpage.css
+	http://www.okologisk-honning.no/++theme++honning/++theme++medialog.fullpagetheme/static/fullpage.css
+	http://www.okologisk-honning.no/++theme++medialog.fullpagetheme/static/fullpage.css
+*/
+
+div.fp-tableCell {
+	text-align: center;
+/* 	font-size: 130%; */
+	background-size:cover;
+	padding:0;
+}
+
+div.slide-box {
+	height: 100%;;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	background-position: center center;
+}
+
+ 
+
+div.slidertext {
+ 	position: relative;
+	top: 35%;
+ 	background: none;
+}
+
+div.slidertext h1 {
+	 color:  white;
+	 font-size: 4em !important ;
+	 font-family: times;
+	text-shadow: black 3px 3px 4px;
+	margin: 0;
+ 
+
+	 
+}
+
+div.slidertext h2 {
+	 color:  white;
+	 font-size: 2em !important ;
+	 font-family: times;
+	text-shadow: black 3px 3px 6px;
+	margin-top: 3px;
+ 
+}
+
+
+#mainnav {
+	text-align: center;
+	background: transparent;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.plone-navbar-header {
+	background: black;
+	height:  3em;;
+	position: absolute;
+	top: 0;
+	left:  0;
+	right:  0;;
+}
+
+button.plone-navbar-toggle {
+	line-height: 1em;	
+	background: whitesmoke;	
+	margin-right: 1em;
+font-size: 1.2em;
+	}
+
+
+button.plone-navbar-toggle:hover {
+	background: white;
+}
+
+
+
+#menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	padding: 1em 2em 0.5em;
+	list-style-image: none;
+	list-style-type: none;
+	background: black;
+	line-height: 2em;
+}
+
+
+
+
+#menu #portal-logo {
+	margin-right: 2em;
+	margin-top: 0;
+}
+
+.fp-viewing-0  #menu {
+	background: #FFF;
+}
+
+.fp-viewing-0  #menu li a {
+	color: #444;
+}
+
+body[class*="fp-viewing"]  #viewlet-above-content {
+	display: none;
+}
+
+body[class*="fp-viewing-0"]  #viewlet-above-content {
+	display: block;
+}
+
+#menu li {
+	list-style-image: none;
+	margin-left: 1.5em;
+	padding-bottom: 0px;
+	list-style-type: none;
+	display: inline-block;
+}
+
+#menu li a {
+	color: white;
+}
+
+#menu li:hover  a {
+	text-decoration: none;
+		background: none !important;
+
+}
+
+#menu li.active,
+#menu li:hover {
+	border-bottom: 2px solid white;
+	background: none !important;
+}
+#menu li#portal-logo:hover {
+	border:  0 none;
+}
+
+hr {
+	clear: both;
+}
+
+.fp-viewing-0  #menu a {
+	color: #CCC;
+}
+
+#portal-globalnav {
+	position: fixed;
+	z-index: 9;
+	padding-bottom: 0;
+}
+
+.slidertext,
+.fp-tableCell .visualIEFloatFix {
+	background: white;
+	opacity: 0.8;
+	max-width: 550px;
+	min-width: 450px;
+	margin: auto;
+	padding: 1em 2em 3em;
+	min-height: 15%;
+	border-radius: 0.5em;
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	-o-transition: 500ms;
+	transition: 500ms;
+}
+
+a.summary.url {
+	color: #333;
+	font-size: 190%;
+	line-height: 130%;
+}
+
+
+
+div.description {
+	font-weight: bold;
+	padding: 0 1em 1em;
+	font-size: 130%;
+	color: #666;
+}
+
+p {
+	font-size: 120%;
+	line-height: 150%;
+}
+
+p.more {
+	font-size: 95%;
+	text-align: right;
+}
+
+img.newsImage {
+	display: none;
+}
+
+
+
+input.int-field {
+	float: left;
+	width: 3em;
+	margin-left: 1em;
+}
+
+label.horizontal {
+	float: left;
+	min-width: 380px;
+	clear: both;
+	line-height: 2.6
+	em;
+}
+
+
+
+label.horizontal {
+	float: left;
+	min-width: 380px;
+	clear: both;
+	line-height: 2.6em;
+}
+
+html, body {
+    /*Avoid flicker on slides transitions for mobile phones #336 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+#superContainer {
+    height: 100%;
+    position: relative;
+
+    /* Touch detection for Windows 8 */
+    -ms-touch-action: none;
+
+    /* IE 11 on Windows Phone 8.1*/
+    touch-action: none;
+}
+
+ 
+.product-boxes {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  overflow: visible !important;
+  xheight: uto;z-index
+}
+
+.product-box {
+	  width: 32%;
+	  max-width: 700px;
+	  margin-top: 4em;
+	  padding: 1em 2em;
+	  border-radius: 7px;
+	  border:  1px solid silver;
+	  text-align: left;
+     }
+
+.product-box img {
+	float: right;
+	margin-left: 2em;
+}
+
+.product-box h1 {
+ 	color: black;
+	font-size: 1.6em !important;
+}
+.product-box h2 {
+	color:  #111;
+	font-size: 120%;
+	line-height: 140%;
+}
+
+.product-box p{
+	font-size: 90%
+}
+.fp-section {
+    position: relative;
+    -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+    -moz-box-sizing: border-box; /* <=28 */
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+}
+.fp-slide {
+    float: left;
+}
+
+
+
+.fp-slide, .fp-slidesContainer {
+    height: 100%;
+    display: block;
+}
+.fp-slides {
+    z-index:1;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
+    transition: all 0.3s ease-out;
+}
+.fp-section.fp-table, .fp-slide.fp-table {
+    display: table;
+    table-layout:fixed;
+    width: 100%;
+}
+.fp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    overflow: scroll !important;
+    height: 200px !important;
+}
+.fp-slidesContainer {
+    float: left;
+    position: relative;
+}
+.fp-controlArrow {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    width: 38px;
+    height: 38px;
+    background: #ce222a;
+    border-radius: 5px;
+    margin-top: -38px;
+    opacity: 0.96;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.fp-controlArrow.fp-prev {
+    left: 18px;
+    background-image: url(++theme++medialog.fullpagetheme/arrow-left.png);
+
+
+}
+.fp-controlArrow.fp-next {
+    right: 18px;
+       background-image: url(++theme++medialog.fullpagetheme/arrow-right.png);
+}
+.fp-scrollable {
+    overflow: scroll;
+}
+.fp-notransition {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+#fp-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+}
+#fp-nav.right {
+    right: 17px;
+}
+#fp-nav.left {
+    left: 17px;
+}
+.fp-slidesNav{
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    opacity: 1;
+}
+.fp-slidesNav.bottom {
+    bottom: 17px;
+}
+.fp-slidesNav.top {
+    top: 17px;
+}
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+}
+.fp-slidesNav ul li {
+    display: inline-block;
+}
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span{
+    height: 12px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+ }
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: #333;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span{
+    width: 10px;
+    height: 10px;
+    margin: -5px 0px 0px -5px;
+}
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: -2px;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    white-space: nowrap;
+    max-width: 220px;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    width: 0;
+}
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+    -webkit-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+    width: auto;
+    opacity: 1;
+}
+#fp-nav ul li .fp-tooltip.right {
+    right: 20px;
+}
+#fp-nav ul li .fp-tooltip.left {
+    left: 20px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+.container {
+	margin: 0 10px;
+}
+
+h1 {
+	font-size: 26px !important;
+}
+
+.slidertext {
+
+	width: 80%;
+	padding:  5%;; 
+}
+
+.product-box {
+	  width: 100%;
+ 
+     }
+
+}
+@media  (max-width:1200px) {
+
+ 
+.product-box {
+	  width: 44%;
+ 
+     }
+
+@media  (min-width: 769px) {
+
+h1 {
+	font-size: 34px !important;
+}
+
+
+
+}
