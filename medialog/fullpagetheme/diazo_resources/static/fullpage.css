@@ -517,6 +517,9 @@ h1 {
  
      }
      
+   .slidertext  {
+	font-size: 75%;
+}
   .product-box img{
 	 float: none;
 	 margin: auto;
