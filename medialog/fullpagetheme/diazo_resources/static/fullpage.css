@@ -1,12 +1,3 @@
-/* @override http://www.okologisk-honning.no/++theme++medialog.fullpagetheme/static/fullpage.css */
-
-/* @override 
-	http://localhost:8080/fpage/++theme++medialog.fullpagetheme/static/fullpage.css
-	http://localhost:8080/honning/++theme++medialog.fullpagetheme/static/fullpage.css
-	http://localhost:8080/honning/fullpage/++theme++medialog.fullpagetheme/static/fullpage.css
-	http://www.okologisk-honning.no/++theme++honning/++theme++medialog.fullpagetheme/static/fullpage.css
-	http://www.okologisk-honning.no/++theme++medialog.fullpagetheme/static/fullpage.css
-*/
 
 div.fp-tableCell {
 	text-align: center;
@@ -479,6 +470,13 @@ html, body {
 }
 
 
+@media  (max-width:1200px) {
+
+ 
+.product-box {
+	  width: 44%;
+ 
+     }
 
 
 
@@ -504,13 +502,6 @@ h1 {
      }
 
 }
-@media  (max-width:1200px) {
-
- 
-.product-box {
-	  width: 44%;
- 
-     }
 
 @media  (min-width: 769px) {
 
