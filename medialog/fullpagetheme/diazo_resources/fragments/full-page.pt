@@ -87,11 +87,11 @@
             </section>    
         </tal:lopp>
         
-        <section class="no-margin section fp-auto-height"
+        <section class="no-margin section fp-auto-height fp-scrollable"
             data-anchor="products"
             tal:condition="products_is" >
 
-            <div class="product-boxes">
+            <div class="product-boxes fp-scrollable">
                 <div tal:repeat="item  context/products/@@folderListing" class="product-box" 
                     tal:attributes="data-anchor item/id;">
  
