@@ -47,7 +47,7 @@
             <li class="btn"  
    			    tal:condition="products_is"
    			    data-menuanchor="products">
-    		    <a  href="#products">Honningtypar</a>
+    		    <a  href="#products"><span tal:content="context/products/Title"/></a>
    			</li>
    			
         </ul>
