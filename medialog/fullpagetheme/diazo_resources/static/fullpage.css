@@ -237,6 +237,7 @@ html, body {
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
   justify-content: space-around;
   /* Then we define how is distributed the remaining space */
   justify-content: space-around;
