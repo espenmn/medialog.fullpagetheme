@@ -76,7 +76,7 @@
         <tal:lopp tal:repeat="item 
                 context/@@folderListing">
                 
-            <section class="section fa fp-auto-height" 
+            <section class="section fa" 
                      tal:condition="not:item/exclude_from_nav" 
                      tal:define="realobject item/getObject;
                      url realobject/absolute_url;
@@ -91,7 +91,7 @@
             data-anchor="products"
             tal:condition="products_is" >
 
-            <div class="product-boxes">
+            <div class="product-boxes fp-auto-height">
                 <div tal:repeat="item  context/products/@@folderListing" class="product-box" 
                     tal:attributes="data-anchor item/id;">
  
