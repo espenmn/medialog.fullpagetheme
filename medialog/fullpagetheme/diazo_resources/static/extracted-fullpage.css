@@ -349,16 +349,17 @@ html, body {
     opacity: 0.96;
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: 27% 45%;
 }
 .fp-controlArrow.fp-prev {
     left: 18px;
-    background-image: url(++theme++medialog.fullpagetheme/arrow-left.png);
+    background-image: url(/++theme++medialog.fullpagetheme/static/arrow-left.png);
 
 
 }
 .fp-controlArrow.fp-next {
     right: 18px;
-       background-image: url(++theme++medialog.fullpagetheme/arrow-right.png);
+       background-image: url(/++theme++medialog.fullpagetheme/static/arrow-right.png);
 }
 .fp-scrollable {
     overflow: scroll;
