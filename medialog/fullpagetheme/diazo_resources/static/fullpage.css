@@ -275,6 +275,7 @@ html, body {
     -moz-box-sizing: border-box; /* <=28 */
     box-sizing: border-box;
     background-size: cover;
+    background-position: center center;
 }
 .fp-slide {
     float: left;
