@@ -1,5 +1,7 @@
 /* @override http://www.okologisk-honning.no/++theme++medialog.fullpagetheme/static/fullpage.css */
 
+/* @override http://www.okologisk-honning.no/++theme++medialog.fullpagetheme/static/fullpage.css */
+
 /* @override http://www.okologisk-honning.no/fullpage/++theme++medialog.fullpagetheme/static/fullpage.css */
 
 div.fp-tableCell {
@@ -252,10 +254,10 @@ html, body {
   justify-content: space-around;
   -webkit-justify-content: space-around;
   align-items: flex-start;
-  overflow: auto;
+  overflow: scroll;
   min-height: 10px;
- min-height: 700px;
- height: 10px;
+ min-height: 20px;
+ height: inherit;
   
 }
 
