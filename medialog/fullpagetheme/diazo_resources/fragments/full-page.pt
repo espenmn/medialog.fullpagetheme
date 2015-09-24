@@ -90,8 +90,8 @@
         <section id="product-scroll" class="no-margin section"
             data-anchor="products"
             tal:condition="products_is" >
-		</section>
-            <div class="product-boxes fp-scrollable"  tal:condition="products_is" >
+
+            <div class="product-boxes fp-scrollable">
                 <div tal:repeat="item  context/products/@@folderListing" class="product-box" 
                     tal:attributes="data-anchor item/id;">
  
@@ -108,7 +108,7 @@
 
                  </div>
             </div>
- 
+        </section>
 
 </div>
 
