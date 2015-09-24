@@ -97,6 +97,10 @@ button.plone-navbar-toggle:hover {
 }
 
 
+#menu,
+div.plone-navbar-header {
+	z-index: 99;
+}
 
 
 #menu #portal-logo {
