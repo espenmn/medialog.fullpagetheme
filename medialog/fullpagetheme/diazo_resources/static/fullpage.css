@@ -486,6 +486,10 @@ button.plone-navbar-toggle {
 
 @media (max-width: 768px) {
 	
+.fp-controlArrow  {
+	display: none;
+}
+	
 div.visualIEFloatFix {
 	padding: 0;
 	margin: 0;
@@ -509,21 +513,18 @@ h1 {
 	font-size: 26px !important;
 }
 
- 
-
 .product-box {
 	  width: 100%;
- 
-     }
+ }
      
-   .slidertext  {
+ .slidertext  {
 	font-size: 75%;
 }
-  .product-box img{
+
+.product-box img{
 	 float: none;
 	 margin: auto;
- 
-     }
+}
  
 
 }
