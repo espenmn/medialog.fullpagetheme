@@ -249,8 +249,9 @@ html, body {
   /* Then we define how is distributed the remaining space */
   justify-content: space-around;
   -webkit-justify-content: space-around;
-  overflow: visible !important;
-  xheight: uto;z-index
+  align-items: flex-start;
+  overflow: auto;
+  
 }
 
 .product-box {
@@ -262,8 +263,8 @@ html, body {
 	  border:  1px solid silver;
 	  text-align: left;
 	  background: white;
-     }
-
+ }
+ 
 .product-box img {
 	float: right;
 	margin-left: 2em;
