@@ -1,3 +1,5 @@
+/* @override http://www.okologisk-honning.no/fullpage/++theme++medialog.fullpagetheme/static/fullpage.css */
+
 
 div.fp-tableCell {
 	text-align: center;
@@ -527,6 +529,10 @@ button.plone-navbar-toggle {
 }
 
 @media (max-width: 768px) {
+	
+	#menu #portal-logo {
+	display: none;
+	}
 	
 	.fp-controlArrow  {
 		display: none;
