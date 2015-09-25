@@ -477,7 +477,7 @@ button.plone-navbar-toggle {
 }
 
 /* animation */
- .animation.animated-item-1 {
+ .active .animation.animated-item-1 {
   -webkit-animation: fadeInUp 300ms linear 300ms both;
   -moz-animation: fadeInUp 300ms linear 300ms both;
   -o-animation: fadeInUp 300ms linear 300ms both;
@@ -485,7 +485,7 @@ button.plone-navbar-toggle {
   animation: fadeInUp 300ms linear 300ms both;
 }
 
-.animation.animated-item-2 {
+.active .animation.animated-item-2 {
   -webkit-animation: fadeInUp 300ms linear 600ms both;
   -moz-animation: fadeInUp 300ms linear 600ms both;
   -o-animation: fadeInUp 300ms linear 600ms both;
