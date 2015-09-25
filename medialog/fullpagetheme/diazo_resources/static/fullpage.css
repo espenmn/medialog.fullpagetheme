@@ -247,6 +247,7 @@ html, body {
 
  
 .product-boxes {
+	padding-top: 1em;
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
@@ -254,21 +255,20 @@ html, body {
   /* Then we define how is distributed the remaining space */
   justify-content: space-around;
   -webkit-justify-content: space-around;
-  align-items: flex-start;
 }
 
 .product-box {
 	  width: 32%;
 	  max-width: 700px;
 	  margin-top: 2em;
-	  padding: 1em 2em;
+	  padding: 0.4em 1em;
 	  border-radius: 7px;
 	  border:  1px solid silver;
 	  text-align: left;
 	  background: white;
  }
  
-.product-box img {
+.¨-box img {
 	float: right;
 	margin-left: 2em;
 }
@@ -515,8 +515,9 @@ button.plone-navbar-toggle {
 
 @media  (max-width:1200px) {
    .product-box {
-	  width: 44%;
- 
+	  width: 48%;
+ 	margin-left:  0;
+ 	margin: 1%;
  }
 }
 
