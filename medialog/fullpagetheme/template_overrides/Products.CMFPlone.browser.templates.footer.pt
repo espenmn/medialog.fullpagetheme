@@ -8,9 +8,9 @@
 
   <section class="portlet portletClassic" id="portal-footer-signature" metal:define-macro="portlet">
     <div class="portletContent">
-      &copy;
-      <span i18n:name="plonecms" tal:omit-tag="">
-           <a href="http://www.medialog.no">Grieg Medialog - 2005</a>
+
+      <span>
+               &copy;  <a href="http://www.medialog.no">Grieg Medialog - 2005</a>
      </span>
       
     </div>
