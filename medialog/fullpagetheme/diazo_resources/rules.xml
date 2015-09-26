@@ -8,7 +8,7 @@
 
     <xi:include href="++theme++bergensiana/rules.xml" />
     <after theme-children="/html/head" >     
-       <link href="++theme++bergensiana/less/bergensiana-compiled.css" 
+       <link href="++theme++medialog.fullpagetheme//static/fullpagebase.css" 
              rel="stylesheet"/>
     </after>
     
