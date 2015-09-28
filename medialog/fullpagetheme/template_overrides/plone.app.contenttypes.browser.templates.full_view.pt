@@ -99,8 +99,7 @@
 
         
       </metal:block>
-    </metal:entries>
-    <section id="product-scroll" class="no-margin section"
+          <section id="product-scroll" class="no-margin section"
 		data-anchor="products"
 		tal:condition="products_is" >
 
@@ -122,6 +121,8 @@
 			 </div>
 		</div>
 	</section>
+      
+    </metal:entries>
     
   </metal:listing>
 </metal:block>
