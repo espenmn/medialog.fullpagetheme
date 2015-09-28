@@ -58,6 +58,7 @@
    			    	data-menuanchor="products">
     		    	<a  href="#products"><span tal:content="context/products/Title"/></a>
    			   </li>
+   			   <li>....</li>
 			</ul>    
 		  </div>
  
