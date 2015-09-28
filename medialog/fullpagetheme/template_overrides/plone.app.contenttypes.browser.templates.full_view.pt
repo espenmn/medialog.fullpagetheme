@@ -9,7 +9,7 @@
 
 <metal:content-core fill-slot="content-core"  
 	tal:define="slider_is exists:context/slider;
-	products_is= exists:context/products">
+	products_is exists:context/products">
   <metal:block define-macro="content-core">
   <metal:listing use-macro="context/@@listing_view/macros/content-core">
     <!-- we don't want the dl -->
