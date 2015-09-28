@@ -51,6 +51,11 @@
 							tal:content="item/Title" />
 					</li>	 
 				</tal:loop>
+				<li class="btn"  
+   			    	tal:condition="products_is"
+   			    	data-menuanchor="products">
+    		    	<a  href="#products"><span tal:content="context/products/Title"/></a>
+   			   </li>
 			</ul>    
 		  </div>
  
@@ -93,6 +98,29 @@
         
       </metal:block>
     </metal:entries>
+    <section id="product-scroll" class="no-margin section"
+		data-anchor="products"
+		tal:condition="products_is" >
+
+		<div class="product-boxes fp-scrollable">
+			<div tal:repeat="item  context/products/@@folderListing"
+				tal:attributes="data-anchor item/id;"
+				 class="product-box" >
+
+				<img tal:define="item_object item/getObject;" 
+					 tal:condition="exists:item_object/@@images/image"
+				  tal:replace="structure item_object/@@images/image/mini" />
+
+				 <h1  tal:content="item/Title" />
+					<h2 tal:content="item/Description" />
+
+					 <div  tal:condition="item/text"
+							tal:content="structure item/text/output" />
+
+			 </div>
+		</div>
+	</section>
+    
   </metal:listing>
 </metal:block>
 </metal:content-core>
