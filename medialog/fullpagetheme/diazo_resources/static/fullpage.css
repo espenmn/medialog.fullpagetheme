@@ -131,6 +131,7 @@ body[class*="fp-viewing-0"]  #viewlet-above-content {
 
 #menu li a {
 	color: white;
+	padding-bottom:2px;
 }
 
 #menu li:hover  a {
@@ -139,12 +140,12 @@ body[class*="fp-viewing-0"]  #viewlet-above-content {
 
 }
 
-#menu li.active,
-#menu li:hover {
+#menu li.active a,
+#menu li:hover a {
 	border-bottom: 2px solid white;
 	background: none !important;
 }
-#menu li#portal-logo:hover {
+#menu li:hover a#portal-logo {
 	border:  0 none;
 }
 
