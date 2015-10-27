@@ -23,7 +23,7 @@
     </rules>
     
     <!-- Apply the following rules to all-content view -->
-    <rules css:if-content=".template-full_view.userrole-anonymous">
+    <rules css:if-content=".template-full_view">
 
         <theme href="++theme++medialog.fullpagetheme/fullpage.html" />
         <replace css:content="#content-core" css:theme="#content-core" />
@@ -34,7 +34,7 @@
     </rules>
     
     <!-- Apply the following rules to front page -->
-    <rules css:if-content=".portaltype-folder.section-fullpage.userrole-anonymous">
+    <rules css:if-content=".portaltype-folder.section-fullpage">
 
         <theme href="++theme++medialog.fullpagetheme/fullpage.html" />
 
