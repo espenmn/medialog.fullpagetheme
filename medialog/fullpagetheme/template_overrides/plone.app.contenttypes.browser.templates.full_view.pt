@@ -91,7 +91,8 @@
 			 tal:attributes="data-anchor item/id; 
 			 style logo"
 			 tal:condition="not:item/exclude_from_nav" >
-
+        	<div tal:define="realobject python:item.getObject()"
+             	tal:replace="structure realobject/@@full_view_item" />
 		</div>
         </metal:entry>
 
