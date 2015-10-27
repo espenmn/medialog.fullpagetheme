@@ -12,13 +12,13 @@
              rel="stylesheet"/>
     </after>
     
+    <drop css:content="#services" />
+    <drop css:content="#feature" />   
+    
     <rules css:if-not-content=".portaltype-folder.section-fullpage, .template-full_view ">
             <!-- Import Bergensiana rules -->
 
             <theme href="++theme++bergensiana/index.html" />
-            <drop css:content="#services" />
-            <drop css:content="#feature" />   
-
 
     </rules>
     

@@ -41,8 +41,8 @@
 					tal:condition="slider_is">
 					<a  href="#main-slider">Top</a>
 				</li>	
-				<tal:loop tal:repeat="item batch">
-					<li class="btn" 
+			  <tal:loop tal:repeat="item batch">
+				<li class="btn" 
 						tal:define="dokument  item/getId" 
 						tal:attributes="data-menuanchor dokument"
 						tal:condition="not:item/exclude_from_nav" >
@@ -51,7 +51,7 @@
 							tal:attributes="href link;  
 							data-menuanchor item/getId"
 							tal:content="item/Title" />
-					</li>	 
+				    </li>	 
 				</tal:loop>
 				<li class="btn"  
    			    	tal:condition="products_is"
